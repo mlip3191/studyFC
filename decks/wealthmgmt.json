@@ -1,0 +1,1825 @@
+{
+  "schema_version": 1,
+  "id": "95899a",
+  "title": "WealthMgmt",
+  "source": {
+    "filename": "MBAX_6215_Midterm_Cheat_Sheet.pdf",
+    "type": "pdf",
+    "imported_at": "2026-10-21T21:37:09Z"
+  },
+  "created_at": "2026-10-21T21:37:09Z",
+  "updated_at": "2026-10-21T21:48:21Z",
+  "groups": [
+    {
+      "id": "aef0d2",
+      "name": "Performance Ratios",
+      "order": 0
+    },
+    {
+      "id": "056068",
+      "name": "Bond Taxation and Yields",
+      "order": 1
+    },
+    {
+      "id": "e104d6",
+      "name": "Dollar Cost Averaging",
+      "order": 2
+    },
+    {
+      "id": "c76902",
+      "name": "Real Return",
+      "order": 3
+    },
+    {
+      "id": "8bdd02",
+      "name": "Behavioral Finance Frameworks",
+      "order": 4
+    },
+    {
+      "id": "5fcf42",
+      "name": "Cognitive vs Emotional Biases",
+      "order": 5
+    },
+    {
+      "id": "838c29",
+      "name": "Look-Alike Biases",
+      "order": 6
+    },
+    {
+      "id": "349ae4",
+      "name": "FDIC Insurance",
+      "order": 7
+    },
+    {
+      "id": "2c627b",
+      "name": "Personal Financial Statements",
+      "order": 8
+    },
+    {
+      "id": "c0fdb9",
+      "name": "Financial Ratios",
+      "order": 9
+    },
+    {
+      "id": "290df0",
+      "name": "50/30/20 Budget",
+      "order": 10
+    },
+    {
+      "id": "8e0fc7",
+      "name": "Investment Policy Statement",
+      "order": 11
+    },
+    {
+      "id": "f0aa83",
+      "name": "The 4% Rule",
+      "order": 12
+    },
+    {
+      "id": "f71f63",
+      "name": "Risk Tolerance",
+      "order": 13
+    },
+    {
+      "id": "f5b59f",
+      "name": "Risk and Return",
+      "order": 14
+    },
+    {
+      "id": "a13e5d",
+      "name": "Gordon Growth Model",
+      "order": 15
+    },
+    {
+      "id": "972bfa",
+      "name": "Piper and Bernstein Readings",
+      "order": 16
+    },
+    {
+      "id": "e3d6df",
+      "name": "Formula Review Table",
+      "order": 17
+    }
+  ],
+  "cards": [
+    {
+      "id": "e93eaa",
+      "group_id": "aef0d2",
+      "type": "term",
+      "front": "Sharpe ratio",
+      "back": "Excess return per unit of total risk: (Rp − Rf) ÷ σp. Higher is better.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "2ae77c",
+      "group_id": "aef0d2",
+      "type": "qa",
+      "front": "In the Sharpe ratio, what do Rp, Rf and σp stand for?",
+      "back": "Rp = portfolio return, Rf = risk-free rate, σp = standard deviation of the portfolio.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "773a46",
+      "group_id": "aef0d2",
+      "type": "qa",
+      "front": "Compute the Sharpe ratio: Rp = 10%, Rf = 3%, σ = 14%.",
+      "back": "(10 − 3) ÷ 14 = 0.50",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "676a69",
+      "group_id": "aef0d2",
+      "type": "qa",
+      "front": "When should you use the Sharpe ratio?",
+      "back": "When the portfolio is the investor's whole portfolio, so total risk (including diversifiable risk) matters.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "c9fa3a",
+      "group_id": "aef0d2",
+      "type": "term",
+      "front": "Sortino ratio",
+      "back": "Excess return per unit of downside risk: (Rp − Rf or MAR) ÷ σdownside.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "7c01b0",
+      "group_id": "aef0d2",
+      "type": "qa",
+      "front": "How does the Sortino ratio's denominator differ from Sharpe's?",
+      "back": "It counts only volatility below the target (downside deviation), so upside volatility is not penalized.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "f0565a",
+      "group_id": "aef0d2",
+      "type": "term",
+      "front": "MAR (in the Sortino ratio)",
+      "back": "Minimum acceptable return, which sometimes replaces Rf in the numerator.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "e536ea",
+      "group_id": "aef0d2",
+      "type": "qa",
+      "front": "Compute the Sortino ratio: Rp = 10%, Rf = 3%, downside deviation 8%.",
+      "back": "7 ÷ 8 = 0.875",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "398179",
+      "group_id": "aef0d2",
+      "type": "qa",
+      "front": "When should you use the Sortino ratio?",
+      "back": "When returns are asymmetric (options, hedge funds) or the client cares about losses, not swings.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "e946bd",
+      "group_id": "aef0d2",
+      "type": "term",
+      "front": "Treynor ratio",
+      "back": "Excess return per unit of systematic risk: (Rp − Rf) ÷ βp.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "29fe7d",
+      "group_id": "aef0d2",
+      "type": "qa",
+      "front": "Compute the Treynor ratio: Rp = 10%, Rf = 3%, β = 1.2.",
+      "back": "7% ÷ 1.2 = 5.83%",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "d6ae90",
+      "group_id": "aef0d2",
+      "type": "qa",
+      "front": "When should you use the Treynor ratio?",
+      "back": "When the fund is one piece of a well-diversified portfolio, so only beta (market risk) matters.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "0e19b5",
+      "group_id": "aef0d2",
+      "type": "qa",
+      "front": "Which risk measure does each ratio use: Sharpe, Treynor, Sortino?",
+      "back": "Sharpe uses σ (total risk); Treynor uses β (market risk); Sortino uses downside σ.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "3bb2bc",
+      "group_id": "aef0d2",
+      "type": "qa",
+      "front": "How can a fund win on Treynor but lose on Sharpe?",
+      "back": "If it carries a lot of unsystematic risk (which Sharpe penalizes via total σ but Treynor ignores).",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "02e67c",
+      "group_id": "056068",
+      "type": "term",
+      "front": "After-tax return on a taxable bond",
+      "back": "R_after-tax = R_taxable × (1 − t).",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "339bb4",
+      "group_id": "056068",
+      "type": "term",
+      "front": "Tax-equivalent yield (TEY)",
+      "back": "TEY = R_muni ÷ (1 − t): the taxable yield needed to match a muni's tax-free yield.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "0e68d2",
+      "group_id": "056068",
+      "type": "term",
+      "front": "Marginal tax rate (t)",
+      "back": "The rate on the next dollar of income, not the average rate.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "50809d",
+      "group_id": "056068",
+      "type": "qa",
+      "front": "32% bracket, corporate bond yields 5.0%. What is its after-tax yield?",
+      "back": "5.0 × (1 − 0.32) = 3.40%",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "2390de",
+      "group_id": "056068",
+      "type": "qa",
+      "front": "32% bracket, muni yields 3.5%. What is its tax-equivalent yield, and does it beat a 5.0% corporate bond?",
+      "back": "3.5 ÷ 0.68 = 5.15%, which beats 5.00% (also 3.50% > 3.40% after-tax). The muni wins.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "65b638",
+      "group_id": "056068",
+      "type": "qa",
+      "front": "How is a corporate bond's interest taxed federally and by state?",
+      "back": "Taxed by both federal and state governments.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "70ea57",
+      "group_id": "056068",
+      "type": "qa",
+      "front": "How is U.S. Treasury interest taxed federally and by state?",
+      "back": "Federally taxed; exempt from state tax.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "92281d",
+      "group_id": "056068",
+      "type": "qa",
+      "front": "How is in-state municipal bond interest taxed?",
+      "back": "Exempt from federal tax and usually exempt from state tax.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "d040f5",
+      "group_id": "056068",
+      "type": "qa",
+      "front": "How is out-of-state municipal bond interest taxed?",
+      "back": "Exempt from federal tax but usually taxed by the state.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "5968ab",
+      "group_id": "e104d6",
+      "type": "term",
+      "front": "Dollar cost averaging (DCA)",
+      "back": "Investing a fixed dollar amount at regular intervals regardless of price.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "c75449",
+      "group_id": "e104d6",
+      "type": "term",
+      "front": "Average cost per share (DCA)",
+      "back": "Total dollars invested ÷ total shares bought.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "625fa9",
+      "group_id": "e104d6",
+      "type": "qa",
+      "front": "Why is DCA's average cost always ≤ the average price?",
+      "back": "It buys more shares when prices are low; average cost is a harmonic mean.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "7455d8",
+      "group_id": "c76902",
+      "type": "term",
+      "front": "Real return (Fisher relation)",
+      "back": "R_real = (1 + R_nominal) ÷ (1 + inflation) − 1.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "b4a872",
+      "group_id": "c76902",
+      "type": "qa",
+      "front": "Compute the real return: nominal 8%, inflation 3%.",
+      "back": "1.08 ÷ 1.03 − 1 = 4.85%",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "8a6310",
+      "group_id": "c76902",
+      "type": "qa",
+      "front": "Why use the exact real return formula rather than nominal − inflation?",
+      "back": "The shortcut (8 − 3 = 5%) slightly overstates the real return; use the exact formula on the exam.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "ee43ec",
+      "group_id": "8bdd02",
+      "type": "term",
+      "front": "Behavioral biases",
+      "back": "Systematic, predictable errors that pull investors away from rational decisions.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "271a6c",
+      "group_id": "8bdd02",
+      "type": "term",
+      "front": "Prospect theory",
+      "back": "Kahneman & Tversky (1979): people judge outcomes as gains or losses relative to a reference point, not by final wealth.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "9c2a6e",
+      "group_id": "8bdd02",
+      "type": "qa",
+      "front": "What are the four features of prospect theory?",
+      "back": "Reference dependence, loss aversion, diminishing sensitivity, probability weighting.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "88c887",
+      "group_id": "8bdd02",
+      "type": "qa",
+      "front": "Prospect theory: what is reference dependence?",
+      "back": "Outcomes feel good or bad depending on expectations, e.g., a $10k bonus.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "9c97fe",
+      "group_id": "8bdd02",
+      "type": "qa",
+      "front": "Prospect theory: how much worse do losses feel than equal gains?",
+      "back": "Roughly 2× as much.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "51a8c6",
+      "group_id": "8bdd02",
+      "type": "qa",
+      "front": "Prospect theory: what is diminishing sensitivity?",
+      "back": "Risk-averse in gains (take the sure $500) and risk-seeking in losses (gamble to avoid a sure $500 loss).",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "d36374",
+      "group_id": "8bdd02",
+      "type": "qa",
+      "front": "What is the shape of the prospect theory value curve?",
+      "back": "Concave for gains, convex for losses, and steeper for losses.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "9e723a",
+      "group_id": "8bdd02",
+      "type": "qa",
+      "front": "Prospect theory: what is probability weighting?",
+      "back": "People overweight small probabilities (lottery tickets, insurance) and underweight near-certainties.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "40547e",
+      "group_id": "8bdd02",
+      "type": "qa",
+      "front": "What is the financial impact of prospect theory?",
+      "back": "The disposition effect: selling winners too early and holding losers too long.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "c2b5e0",
+      "group_id": "8bdd02",
+      "type": "term",
+      "front": "Paradox of choice",
+      "back": "Barry Schwartz: more options lead to decision paralysis, worse choices, and less satisfaction.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "73aee2",
+      "group_id": "8bdd02",
+      "type": "qa",
+      "front": "What is the classic finance example of the paradox of choice?",
+      "back": "401(k) participation falls as the number of fund options rises (e.g., never enrolling with 40 funds).",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "ae4f07",
+      "group_id": "8bdd02",
+      "type": "qa",
+      "front": "How can the paradox of choice be overcome?",
+      "back": "Curated menus, good defaults (auto-enrollment, target-date funds), a short list from the adviser.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "b1e03e",
+      "group_id": "8bdd02",
+      "type": "qa",
+      "front": "What is the damage caused by the paradox of choice?",
+      "back": "Inaction, cash drag, poor diversification.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "8e1d80",
+      "group_id": "8bdd02",
+      "type": "term",
+      "front": "Cognitive dissonance",
+      "back": "Mental discomfort from holding two conflicting beliefs, or from evidence contradicting a past decision; people reduce it by ignoring or rationalizing the evidence.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "144dea",
+      "group_id": "8bdd02",
+      "type": "qa",
+      "front": "What does cognitive dissonance feed, and what is its investing example?",
+      "back": "It feeds confirmation bias and holding losers; e.g., ignoring bad news about a stock you own (\"the market just doesn't get it\").",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "fe6d3d",
+      "group_id": "8bdd02",
+      "type": "qa",
+      "front": "How can cognitive dissonance be overcome?",
+      "back": "Pre-set sell rules, written investment theses (thesis + sell rules), an outside reviewer.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "9e0478",
+      "group_id": "5fcf42",
+      "type": "qa",
+      "front": "What is the source of cognitive errors versus emotional biases?",
+      "back": "Cognitive errors come from faulty reasoning or memory; emotional biases come from feelings and impulses.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "859c32",
+      "group_id": "5fcf42",
+      "type": "qa",
+      "front": "Which biases are classified as cognitive (CFA framework)?",
+      "back": "Conservatism, confirmation, representativeness, mental accounting, anchoring, framing, recency.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "a7faa8",
+      "group_id": "5fcf42",
+      "type": "qa",
+      "front": "Which biases are classified as emotional (CFA framework)?",
+      "back": "Loss aversion, overconfidence, status quo, endowment, regret aversion.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "39fc99",
+      "group_id": "5fcf42",
+      "type": "qa",
+      "front": "How are cognitive errors fixed versus emotional biases?",
+      "back": "Cognitive: moderate via education, data, checklists. Emotional: harder to correct, so advisers often adapt the portfolio to them (within reason).",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "1656fc",
+      "group_id": "5fcf42",
+      "type": "term",
+      "front": "Conservatism bias",
+      "back": "Being slow to update beliefs when new information arrives.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "048f76",
+      "group_id": "5fcf42",
+      "type": "qa",
+      "front": "Conservatism bias: investing example, damage, and fix?",
+      "back": "Example: analyst barely revises forecast after a big earnings miss. Damage: reacts too slowly, holds stale views. Fix: weigh new data properly; ask \"what would change my mind?\"",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "c3cc96",
+      "group_id": "5fcf42",
+      "type": "term",
+      "front": "Confirmation bias",
+      "back": "Seeking and favoring information that supports existing beliefs.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "3cf4f4",
+      "group_id": "5fcf42",
+      "type": "qa",
+      "front": "Confirmation bias: investing example, damage, and fix?",
+      "back": "Example: reads only bullish posts on a favorite stock. Damage: concentration, overconfidence. Fix: seek out the bear case; devil's advocate.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "7d5f28",
+      "group_id": "5fcf42",
+      "type": "term",
+      "front": "Representativeness bias",
+      "back": "Judging by stereotype or resemblance, ignoring base rates.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "2fc1e0",
+      "group_id": "5fcf42",
+      "type": "qa",
+      "front": "Representativeness bias: investing example, damage, and fix?",
+      "back": "Example: \"great company = great stock\"; chasing last year's top fund. Damage: overpaying, performance chasing. Fix: check base rates and valuation; long track records.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "1a6d5a",
+      "group_id": "5fcf42",
+      "type": "term",
+      "front": "Mental accounting",
+      "back": "Treating money differently by mental \"bucket\" instead of as one pool.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "f673d8",
+      "group_id": "5fcf42",
+      "type": "qa",
+      "front": "Mental accounting: investing example, damage, and fix?",
+      "back": "Example: carries 22% credit-card debt while holding a 1% \"vacation fund.\" Damage: ignores correlation and opportunity cost. Fix: look at total net worth and total portfolio.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "72f6fd",
+      "group_id": "5fcf42",
+      "type": "term",
+      "front": "Anchoring",
+      "back": "Fixating on an initial number and adjusting too little.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "9cebdb",
+      "group_id": "5fcf42",
+      "type": "qa",
+      "front": "Anchoring: investing example, damage, and fix?",
+      "back": "Example: won't sell until the stock returns to the purchase price. Damage: holding losers, bad price targets. Fix: ask \"would I buy it today at this price?\"",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "fcb972",
+      "group_id": "5fcf42",
+      "type": "term",
+      "front": "Framing bias",
+      "back": "Decision changes with how the same facts are presented.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "a3edc4",
+      "group_id": "5fcf42",
+      "type": "qa",
+      "front": "Framing: investing example, damage, and fix?",
+      "back": "Example: prefers \"90% chance of success\" over \"10% chance of loss.\" Damage: inconsistent risk choices. Fix: restate the problem several ways; focus on outcomes.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "84190f",
+      "group_id": "5fcf42",
+      "type": "term",
+      "front": "Recency bias",
+      "back": "Overweighting recent events versus the long run.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "a44a18",
+      "group_id": "5fcf42",
+      "type": "qa",
+      "front": "Recency: investing example, damage, and fix?",
+      "back": "Example: expects 20% returns after a two-year rally; panics after a crash. Damage: buy high, sell low. Fix: long-run data; rebalancing rules.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "9d9314",
+      "group_id": "5fcf42",
+      "type": "term",
+      "front": "Loss aversion (bias)",
+      "back": "Losses feel ~2× worse than equal gains.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "784081",
+      "group_id": "5fcf42",
+      "type": "qa",
+      "front": "Loss aversion: investing example, damage, and fix?",
+      "back": "Example: holds losers to avoid realizing loss; too conservative overall. Damage: disposition effect, under-investing. Fix: focus on total return; tax-loss harvesting reframes losses as useful.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "206b1d",
+      "group_id": "5fcf42",
+      "type": "term",
+      "front": "Overconfidence",
+      "back": "Overestimating one's knowledge, skill, or precision.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "a18134",
+      "group_id": "5fcf42",
+      "type": "qa",
+      "front": "Overconfidence: investing example, damage, and fix?",
+      "back": "Example: trades often; concentrates in a few stocks. Damage: high costs, taxes, under-diversification. Fix: track your record; trading limits; index core.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "ceaac7",
+      "group_id": "5fcf42",
+      "type": "term",
+      "front": "Status quo bias",
+      "back": "Preferring to leave things as they are.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "736df9",
+      "group_id": "5fcf42",
+      "type": "qa",
+      "front": "Status quo bias: investing example, damage, and fix?",
+      "back": "Example: never changes 401(k) allocation set years ago. Damage: portfolio drifts away from goals. Fix: scheduled reviews; auto-rebalancing; defaults that fit.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "bb7d1e",
+      "group_id": "5fcf42",
+      "type": "term",
+      "front": "Endowment effect",
+      "back": "Valuing what you own more than you'd pay to buy it.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "89244a",
+      "group_id": "5fcf42",
+      "type": "qa",
+      "front": "Endowment effect: investing example, damage, and fix?",
+      "back": "Example: keeps inherited stock that is 40% of the portfolio. Damage: concentration risk. Fix: \"If you had cash, would you buy this?\"; gradual sales.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "51b5d1",
+      "group_id": "5fcf42",
+      "type": "term",
+      "front": "Regret aversion",
+      "back": "Avoiding decisions that might later cause regret.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "aabcd9",
+      "group_id": "5fcf42",
+      "type": "qa",
+      "front": "Regret aversion: investing example, damage, and fix?",
+      "back": "Example: stays in cash after a crash; herds into popular stocks. Damage: missed returns or herd risk. Fix: plan in advance; diversify; DCA to ease entry.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "96b823",
+      "group_id": "838c29",
+      "type": "qa",
+      "front": "Conservatism vs confirmation bias?",
+      "back": "Conservatism under-reacts to new information; confirmation filters information to fit a belief.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "6b48b9",
+      "group_id": "838c29",
+      "type": "qa",
+      "front": "Representativeness vs recency?",
+      "back": "Representativeness is stereotype/pattern matching; recency is overweighting what just happened.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "f05415",
+      "group_id": "838c29",
+      "type": "qa",
+      "front": "Status quo vs endowment bias?",
+      "back": "Status quo is inertia (any default); endowment is valuing something because you own it.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "9966c5",
+      "group_id": "838c29",
+      "type": "qa",
+      "front": "Loss aversion vs regret aversion?",
+      "back": "Loss aversion is about financial losses; regret aversion is about the feeling of having made the wrong call (can cause inaction or herding).",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "fac2d6",
+      "group_id": "838c29",
+      "type": "qa",
+      "front": "Anchoring vs framing?",
+      "back": "Anchoring sticks to a number; framing reacts to how a choice is worded.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "1baf7c",
+      "group_id": "838c29",
+      "type": "qa",
+      "front": "Overconfidence vs confirmation bias?",
+      "back": "Confirmation is one cause of overconfidence.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "3d3ce0",
+      "group_id": "349ae4",
+      "type": "qa",
+      "front": "What is the FDIC insurance limit?",
+      "back": "$250,000 per depositor, per insured bank, per ownership category.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "50f725",
+      "group_id": "349ae4",
+      "type": "qa",
+      "front": "When was the FDIC created and by what act?",
+      "back": "By the Banking Act of 1933.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "532b01",
+      "group_id": "349ae4",
+      "type": "qa",
+      "front": "What backs FDIC insurance?",
+      "back": "The full faith and credit of the U.S. government.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "a10108",
+      "group_id": "349ae4",
+      "type": "qa",
+      "front": "Which accounts are FDIC-covered?",
+      "back": "Checking, savings, money market deposit accounts, CDs, cashier's checks.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "4a843b",
+      "group_id": "349ae4",
+      "type": "qa",
+      "front": "Which products are NOT FDIC-covered?",
+      "back": "Stocks, bonds, mutual funds (including money market mutual funds), ETFs, annuities, life insurance, crypto, safe-deposit box contents.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "3a3834",
+      "group_id": "349ae4",
+      "type": "qa",
+      "front": "Are Treasuries FDIC-insured?",
+      "back": "No, but they are backed directly by the U.S. government.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "9a4618",
+      "group_id": "349ae4",
+      "type": "qa",
+      "front": "What are the FDIC ownership categories that let a family exceed $250k at one bank?",
+      "back": "Single accounts, joint accounts, certain retirement accounts (e.g., IRAs), trust accounts (per beneficiary), business accounts.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "13ea07",
+      "group_id": "349ae4",
+      "type": "qa",
+      "front": "How much of a joint account does the FDIC insure for a couple?",
+      "back": "$250k per co-owner, so $500k for a couple.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "b2cdea",
+      "group_id": "349ae4",
+      "type": "qa",
+      "front": "What are ways to insure more than $250k in deposits?",
+      "back": "Spread money across several banks, use different ownership categories, or use networks that split deposits across banks.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "9c950d",
+      "group_id": "349ae4",
+      "type": "term",
+      "front": "SIPC",
+      "back": "Protects brokerage customers up to $500k (including $250k cash) if the brokerage firm fails; does not protect against market losses.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "43c394",
+      "group_id": "349ae4",
+      "type": "qa",
+      "front": "What covers credit union deposits?",
+      "back": "The NCUA, on the same $250k terms.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "f99af6",
+      "group_id": "349ae4",
+      "type": "qa",
+      "front": "A married couple at one bank has her single $250k, his single $250k, and joint $500k. How much is insured?",
+      "back": "$1,000,000 fully insured.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "5f4782",
+      "group_id": "349ae4",
+      "type": "qa",
+      "front": "Has any depositor lost insured deposits since the FDIC began?",
+      "back": "No; no depositor has lost a penny of insured deposits.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "33bc08",
+      "group_id": "2c627b",
+      "type": "qa",
+      "front": "What two statements describe a household's finances?",
+      "back": "The balance sheet (net worth, a snapshot on one date) and the cash flow statement (income and spending over a period).",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "22493e",
+      "group_id": "2c627b",
+      "type": "term",
+      "front": "Net worth",
+      "back": "Total assets − total liabilities.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "4591f3",
+      "group_id": "2c627b",
+      "type": "qa",
+      "front": "How are assets listed on a personal balance sheet, and how are they grouped?",
+      "back": "At fair market value; grouped as cash/liquid, invested (brokerage, retirement), and use/personal (home, cars).",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "6e7559",
+      "group_id": "2c627b",
+      "type": "qa",
+      "front": "How are liabilities grouped on a personal balance sheet?",
+      "back": "Current (credit cards, bills due within a year) and long-term (mortgage, auto, student loans).",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "b29549",
+      "group_id": "2c627b",
+      "type": "qa",
+      "front": "Net worth example: home $500k, retirement $120k, cash $30k; mortgage $380k, car loan $20k, cards $10k.",
+      "back": "Assets $650k − liabilities $410k = net worth $240k.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "4a2be0",
+      "group_id": "2c627b",
+      "type": "term",
+      "front": "Net cash flow (surplus or deficit)",
+      "back": "Cash inflows − cash outflows.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "4c00a6",
+      "group_id": "2c627b",
+      "type": "qa",
+      "front": "What are typical cash inflows and outflows?",
+      "back": "Inflows: salary, bonuses, interest, dividends, rental income. Outflows: fixed (mortgage, insurance, loan payments), variable (food, travel), plus taxes.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "be10f7",
+      "group_id": "2c627b",
+      "type": "qa",
+      "front": "What does a cash flow surplus versus a persistent deficit do?",
+      "back": "A surplus funds savings and investing; a persistent deficit erodes net worth.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "6f35c6",
+      "group_id": "2c627b",
+      "type": "qa",
+      "front": "If you buy a car with a loan, what does the cash flow statement show?",
+      "back": "Only the loan payments, since it records actual cash.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "bd2ffc",
+      "group_id": "c0fdb9",
+      "type": "term",
+      "front": "Savings ratio",
+      "back": "Amount saved ÷ income (denominator may be gross or after-tax/disposable income; state your choice on the exam).",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "ca4a1f",
+      "group_id": "c0fdb9",
+      "type": "qa",
+      "front": "Savings ratio example: saves $1,200/month on $8,000 gross or $6,000 take-home.",
+      "back": "15% of gross; 20% of take-home.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "6cb800",
+      "group_id": "c0fdb9",
+      "type": "qa",
+      "front": "What is a common savings ratio target, and what does Bernstein suggest?",
+      "back": "10–15%+ of gross; Bernstein suggests at least 15%.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "dfc36b",
+      "group_id": "c0fdb9",
+      "type": "term",
+      "front": "Debt-to-income ratio (DTI)",
+      "back": "Total monthly debt payments ÷ gross monthly income; lower is better (measures capacity to take on debt and absorb shocks).",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "01fff3",
+      "group_id": "c0fdb9",
+      "type": "qa",
+      "front": "DTI example: mortgage $2,200, car $450, student loan $350, gross income $10,000/month.",
+      "back": "$3,000 ÷ $10,000 = 30%.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "db858b",
+      "group_id": "c0fdb9",
+      "type": "qa",
+      "front": "What are lender DTI guidelines (front-end, back-end, and mortgage max)?",
+      "back": "Front-end (housing only) ≤ 28%; back-end (all debt) ≤ 36%; many mortgages allow up to 43%.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "392ecd",
+      "group_id": "c0fdb9",
+      "type": "term",
+      "front": "Liquidity ratio",
+      "back": "Liquid assets ÷ monthly expenses; target 3–6 months of expenses as an emergency fund.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "c5fe93",
+      "group_id": "c0fdb9",
+      "type": "term",
+      "front": "Debt ratio",
+      "back": "Total liabilities ÷ total assets.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "7a1fbc",
+      "group_id": "290df0",
+      "type": "term",
+      "front": "50/30/20 budget",
+      "back": "Splits after-tax income into needs 50%, wants 30%, and savings & debt payoff 20% (popularized by Elizabeth Warren, All Your Worth).",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "171ae7",
+      "group_id": "290df0",
+      "type": "qa",
+      "front": "What goes in the 50% \"needs\" bucket?",
+      "back": "Housing, utilities, groceries, insurance, transportation, minimum debt payments.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "fa6427",
+      "group_id": "290df0",
+      "type": "qa",
+      "front": "What goes in the 30% \"wants\" bucket?",
+      "back": "Dining out, travel, entertainment, subscriptions, upgrades.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "a2e7b8",
+      "group_id": "290df0",
+      "type": "qa",
+      "front": "What goes in the 20% savings & debt payoff bucket?",
+      "back": "Emergency fund, retirement and investing, extra debt payments above minimums.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "df4464",
+      "group_id": "290df0",
+      "type": "qa",
+      "front": "Apply 50/30/20 to $6,000 monthly take-home pay.",
+      "back": "Needs $3,000, wants $1,800, savings $1,200.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "7ddc7c",
+      "group_id": "290df0",
+      "type": "qa",
+      "front": "What should you do if needs exceed 50% of income?",
+      "back": "Cut housing or transport costs, or trim wants first.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "e3fa33",
+      "group_id": "290df0",
+      "type": "qa",
+      "front": "Do pre-tax 401(k) contributions count toward the 20% savings bucket?",
+      "back": "Yes, even though they are taken out before take-home pay.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "9463de",
+      "group_id": "290df0",
+      "type": "qa",
+      "front": "What are the strengths and limits of the 50/30/20 budget?",
+      "back": "Strengths: simple and flexible. Limits: 50% for needs is unrealistic in high-cost areas; 20% may be too low for late starters or early retirees.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "ba57b8",
+      "group_id": "8e0fc7",
+      "type": "term",
+      "front": "Investment policy statement (IPS)",
+      "back": "The written plan between client and adviser: sets return and risk objectives, lists constraints, and guides asset allocation, manager choice, and review.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "93e288",
+      "group_id": "8e0fc7",
+      "type": "qa",
+      "front": "What is the IPS skeleton mnemonic and what does it stand for?",
+      "back": "RR TTLLU: Return, Risk; Time horizon, Taxes, Liquidity, Legal, Unique circumstances.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "22537a",
+      "group_id": "f0aa83",
+      "type": "term",
+      "front": "4% rule",
+      "back": "Withdraw 4% of the starting portfolio in year one; each later year withdraw the same dollar amount adjusted for inflation.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "0fb68c",
+      "group_id": "f0aa83",
+      "type": "qa",
+      "front": "Who originated the 4% rule and what did it find?",
+      "back": "William Bengen (1994): it survived every 30-year U.S. period since 1926 with roughly 50–75% in stocks; the Trinity Study confirmed it.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "fa5a02",
+      "group_id": "f0aa83",
+      "type": "qa",
+      "front": "Client needs $80k/year and Social Security covers $30k. What nest egg is needed by the 4% rule?",
+      "back": "$50k ÷ 0.04 = $1.25 million.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "17d5bc",
+      "group_id": "f0aa83",
+      "type": "qa",
+      "front": "4% rule: with $50,000 initial withdrawal and 3% inflation, what is the year 2 withdrawal?",
+      "back": "$50,000 × 1.03 = $51,500.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "1ccf3b",
+      "group_id": "f0aa83",
+      "type": "qa",
+      "front": "Why is the 4% rule useful?",
+      "back": "A simple savings target (\"25× spending\"), a quick test of spending plan sustainability, and an easy client conversation.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "835aba",
+      "group_id": "f0aa83",
+      "type": "qa",
+      "front": "What are the limitations of the 4% rule?",
+      "back": "Based on U.S. history; assumes a 30-year horizon (longer needs ~3–3.5%); ignores fees and taxes; rigid (no spending cuts after crashes); exposed to sequence-of-returns risk.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "92e505",
+      "group_id": "f0aa83",
+      "type": "term",
+      "front": "Sequence-of-returns risk",
+      "back": "The risk that bad returns early in retirement do the most damage.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "dc75c4",
+      "group_id": "f71f63",
+      "type": "term",
+      "front": "Ability (capacity) to take risk",
+      "back": "Objective, financial: driven by time horizon, wealth vs needs, income stability, liquidity needs, spending flexibility, insurance.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "63f92a",
+      "group_id": "f71f63",
+      "type": "term",
+      "front": "Willingness (tolerance) to take risk",
+      "back": "Subjective, psychological: driven by attitudes, questionnaire answers, past behavior (did they sell in 2008 or 2020?), personality.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "f96247",
+      "group_id": "f71f63",
+      "type": "qa",
+      "front": "When is ability to take risk higher?",
+      "back": "Long horizon, large assets vs spending, stable job, few near-term needs.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "6e0ec9",
+      "group_id": "f71f63",
+      "type": "qa",
+      "front": "When is willingness to take risk higher?",
+      "back": "When the client is comfortable with volatility and is an experienced investor.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "029858",
+      "group_id": "f71f63",
+      "type": "qa",
+      "front": "When ability and willingness to take risk conflict, which rule applies?",
+      "back": "Go with the lower one.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "44adcc",
+      "group_id": "f71f63",
+      "type": "qa",
+      "front": "If willingness exceeds ability, what happens? If ability exceeds willingness?",
+      "back": "Ability is a hard limit; if ability is higher, educate the client but respect the lower willingness, since a panicking client destroys more value than a conservative allocation.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "6fdfe4",
+      "group_id": "f71f63",
+      "type": "qa",
+      "front": "How is overall risk tolerance verdict stated?",
+      "back": "As below-average, average, or above-average risk tolerance.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "6787c8",
+      "group_id": "f71f63",
+      "type": "qa",
+      "front": "A 30-year-old surgeon with secure income and 35-year horizon lost sleep in the last drop. What is the overall risk tolerance?",
+      "back": "Average-to-below-average (high ability, low willingness); educate and revisit.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "41783c",
+      "group_id": "f5b59f",
+      "type": "qa",
+      "front": "For which type of risk are investors paid, and why?",
+      "back": "Systematic (market) risk, because unsystematic risk can be diversified away for free.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "ad8350",
+      "group_id": "f5b59f",
+      "type": "term",
+      "front": "CAPM",
+      "back": "E(Ri) = Rf + βi[E(Rm) − Rf]; states the required return.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "35cf15",
+      "group_id": "f5b59f",
+      "type": "qa",
+      "front": "CAPM example: Rf 3%, market 9%, β 1.2.",
+      "back": "3 + 1.2 × 6 = 10.2%.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "4fcc65",
+      "group_id": "f5b59f",
+      "type": "qa",
+      "front": "What is the rough return/risk ladder?",
+      "back": "Cash < short-term bonds < long-term bonds < large-cap stocks < small-cap and emerging-market stocks.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "8e7cb4",
+      "group_id": "f5b59f",
+      "type": "term",
+      "front": "Expected return of a portfolio",
+      "back": "Weighted average of the assets' expected returns: E(Rp) = Σ wi E(Ri).",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "153c0e",
+      "group_id": "f5b59f",
+      "type": "qa",
+      "front": "Portfolio: 60% stocks at 9%, 30% bonds at 4%, 10% cash at 2%. Expected return?",
+      "back": "5.4 + 1.2 + 0.2 = 6.8%.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "8e8352",
+      "group_id": "f5b59f",
+      "type": "qa",
+      "front": "How do you compute an asset's expected return with scenarios?",
+      "back": "E(R) = Σ probability × return.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "5aa108",
+      "group_id": "f5b59f",
+      "type": "qa",
+      "front": "Boom 30% chance of 20%, normal 50% of 8%, bust 20% of −10%. Expected return?",
+      "back": "6 + 4 − 2 = 8%.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "cb82b1",
+      "group_id": "f5b59f",
+      "type": "qa",
+      "front": "Is portfolio risk a weighted average of asset risks?",
+      "back": "No, unless correlation = +1.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "8eda91",
+      "group_id": "a13e5d",
+      "type": "term",
+      "front": "Gordon growth model (constant dividend growth) formula",
+      "back": "P0 = D1 ÷ (r − g)",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "26315d",
+      "group_id": "a13e5d",
+      "type": "qa",
+      "front": "Gordon growth: D1 = $2, r = 8%, g = 4%. What is P0?",
+      "back": "$2 ÷ 0.04 = $50",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "25b746",
+      "group_id": "a13e5d",
+      "type": "qa",
+      "front": "Gordon growth example: if r rises from 8% to 9% (D1 = $2, g = 4%), what happens to price?",
+      "back": "P0 = $2 ÷ 0.05 = $40, a 20% drop from a 1-point change in r.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "f75b54",
+      "group_id": "a13e5d",
+      "type": "qa",
+      "front": "Margin call price formula",
+      "back": "P0 × (1 − IM) ÷ (1 − MM), where IM = initial margin and MM = maintenance margin",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "195e5c",
+      "group_id": "972bfa",
+      "type": "qa",
+      "front": "What is the flow of the tax calculation in Piper's Taxes Made Simple?",
+      "back": "Gross income → AGI → taxable income → tax → credits → refund or balance due.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "b3d460",
+      "group_id": "972bfa",
+      "type": "qa",
+      "front": "Piper: how do progressive brackets work?",
+      "back": "Each rate applies only to the income within that bracket (marginal vs effective rate).",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "b0b786",
+      "group_id": "972bfa",
+      "type": "qa",
+      "front": "Piper: how are dividends and interest treated?",
+      "back": "Qualified vs ordinary dividends; interest is ordinary income.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "012606",
+      "group_id": "972bfa",
+      "type": "qa",
+      "front": "Bernstein's simple portfolio?",
+      "back": "Low-cost three-fund index portfolio: U.S. total stock market, international stock, U.S. bonds; rebalanced periodically.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "09f0be",
+      "group_id": "972bfa",
+      "type": "qa",
+      "front": "Bernstein's guideline for bond allocation?",
+      "back": "Roughly your age or your risk tolerance.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "8c62dc",
+      "group_id": "972bfa",
+      "type": "qa",
+      "front": "What are Bernstein's four pillars of investing?",
+      "back": "Theory, History, Psychology, Business.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "d15162",
+      "group_id": "972bfa",
+      "type": "qa",
+      "front": "Bernstein's pillar of Theory?",
+      "back": "Risk and return are inseparable; diversification is the one free lunch.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "2dbab1",
+      "group_id": "972bfa",
+      "type": "qa",
+      "front": "Bernstein's pillar of History?",
+      "back": "Markets have bubbles and crashes; expect them.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "88301d",
+      "group_id": "972bfa",
+      "type": "qa",
+      "front": "Bernstein's pillar of Psychology?",
+      "back": "You are your own worst enemy (overconfidence, recency, herding).",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "5bc4bc",
+      "group_id": "972bfa",
+      "type": "qa",
+      "front": "Bernstein's pillar of Business?",
+      "back": "The financial industry profits from you via fees, commissions, and conflicts of interest; avoid active managers, brokers, and media hype.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "219ded",
+      "group_id": "972bfa",
+      "type": "qa",
+      "front": "Bernstein's view on market timing and manager selection?",
+      "back": "You can't reliably time the market or pick winning managers; past performance doesn't persist.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "426fe8",
+      "group_id": "972bfa",
+      "type": "term",
+      "front": "Shallow risk (Bernstein)",
+      "back": "A temporary price drop that recovers, such as a crash.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "424315",
+      "group_id": "972bfa",
+      "type": "term",
+      "front": "Deep risk (Bernstein)",
+      "back": "Permanent loss of real wealth from inflation, deflation, confiscation, or devastation.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "cf1352",
+      "group_id": "972bfa",
+      "type": "qa",
+      "front": "Per Bernstein, what is the most likely deep risk and the best long-run defense?",
+      "back": "Inflation is the most likely deep risk; stocks are the best long-run defense.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "ed1f4a",
+      "group_id": "972bfa",
+      "type": "qa",
+      "front": "Bernstein: 'Behavior beats brilliance' means what?",
+      "back": "The investor who stays the course through crashes earns the market return; most don't.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "94ead1",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "Information ratio",
+      "back": "(Rp − Rb) ÷ tracking error",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "35a962",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "Jensen's alpha",
+      "back": "Rp − [Rf + β(Rm − Rf)]",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "c1070b",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "CAPM expected return",
+      "back": "Rf + β(Rm − Rf)",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "fd25f4",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "Beta formula",
+      "back": "Cov(i, m) ÷ σm² = ρ × σi ÷ σm",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "d35a22",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "Correlation formula and range",
+      "back": "Cov ÷ (σA × σB); between −1 and +1.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "36e7fd",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "R-squared",
+      "back": "ρ² with the benchmark; share of variance explained.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "e4355b",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "After-tax yield",
+      "back": "r × (1 − t)",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "2cd44a",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "Tax-equivalent yield (muni)",
+      "back": "Muni yield ÷ (1 − t)",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "46523e",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "Real return formula",
+      "back": "(1 + nominal) ÷ (1 + inflation) − 1",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "2a8864",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "Holding period return (HPR)",
+      "back": "(P1 − P0 + D) ÷ P0",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "478379",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "Geometric mean return",
+      "back": "[(1+r1)(1+r2)…(1+rn)]^(1/n) − 1; always ≤ arithmetic mean.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "84730f",
+      "group_id": "e3d6df",
+      "type": "qa",
+      "front": "TWR vs MWR: whom does each measure?",
+      "back": "TWR = manager, ignores cash flows; MWR (IRR) = investor, flow timing matters.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "42487e",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "Portfolio expected return",
+      "back": "Σ weight × expected return",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "0831d2",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "Two-asset portfolio variance",
+      "back": "w1²σ1² + w2²σ2² + 2w1w2ρσ1σ2",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "dd3a54",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "DCA average cost",
+      "back": "Total $ ÷ total shares; ≤ average price.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "7727df",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "4% rule summary",
+      "back": "Year-1 draw = 4% of portfolio, then raise by inflation; nest egg = 25 × spending.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "f3971e",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "Debt-to-income ratio and limits",
+      "back": "Monthly debt payments ÷ gross monthly income; ≤ 36% back-end, ≤ 28% housing.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "a29c05",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "50/30/20 rule",
+      "back": "Needs / wants / savings, of after-tax income.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "e475ea",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "FDIC coverage limit",
+      "back": "$250k per depositor, per bank, per ownership category; deposits only.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "bcc2c3",
+      "group_id": "e3d6df",
+      "type": "qa",
+      "front": "What holding period makes a gain long-term?",
+      "back": "Held more than 1 year (preferential rates).",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "e28fe1",
+      "group_id": "e3d6df",
+      "type": "qa",
+      "front": "Capital loss limit against ordinary income?",
+      "back": "$3,000 a year; the rest carries forward forever.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "5d65c3",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "Wash sale rule",
+      "back": "Repurchase within 30 days before or after the sale → loss disallowed.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "c8268d",
+      "group_id": "e3d6df",
+      "type": "qa",
+      "front": "Deduction vs credit tax savings?",
+      "back": "Deduction saves amount × marginal rate; credit saves dollar for dollar.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "5353e9",
+      "group_id": "e3d6df",
+      "type": "qa",
+      "front": "Qualified dividend holding requirement?",
+      "back": "Taxed at LTCG rates; held > 60 days in the 121-day window.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "bb278f",
+      "group_id": "e3d6df",
+      "type": "qa",
+      "front": "Home sale exclusion?",
+      "back": "$250k single / $500k joint; must have owned and lived in the home 2 of the last 5 years.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "c0b43a",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "IPS skeleton mnemonic",
+      "back": "RR TTLLU: Return, Risk; Time, Taxes, Liquidity, Legal, Unique.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "e500eb",
+      "group_id": "e3d6df",
+      "type": "qa",
+      "front": "Ability vs willingness to take risk?",
+      "back": "Ability = financial capacity; willingness = psychology; use the lower.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "9bf2f3",
+      "group_id": "e3d6df",
+      "type": "term",
+      "front": "SAMURAI benchmark test",
+      "back": "Specified, Appropriate, Measurable, Unambiguous, Reflective, Accountable, Investable.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    },
+    {
+      "id": "6bd908",
+      "group_id": "e3d6df",
+      "type": "qa",
+      "front": "How to treat cognitive vs emotional biases?",
+      "back": "Cognitive → moderate with education; emotional → adapt to them.",
+      "created_at": "2026-10-21T21:37:09Z",
+      "updated_at": "2026-10-21T21:37:09Z"
+    }
+  ]
+}
