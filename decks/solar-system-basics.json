@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "id": "a1b2c3",
+  "title": "Solar System Basics",
+  "source": {
+    "filename": "solar-system.md",
+    "type": "md",
+    "imported_at": "2026-10-21T20:00:00Z"
+  },
+  "created_at": "2026-10-21T20:00:00Z",
+  "updated_at": "2026-10-21T20:00:00Z",
+  "groups": [
+    {
+      "id": "g1",
+      "name": "Inner Planets",
+      "order": 0
+    },
+    {
+      "id": "g2",
+      "name": "Outer Planets",
+      "order": 1
+    },
+    {
+      "id": "g3",
+      "name": "Small Bodies",
+      "order": 2
+    }
+  ],
+  "cards": [
+    {
+      "id": "c1",
+      "group_id": "g1",
+      "type": "qa",
+      "front": "Which planet is closest to the Sun?",
+      "back": "Mercury.",
+      "created_at": "2026-10-21T20:00:00Z",
+      "updated_at": "2026-10-21T20:00:00Z"
+    },
+    {
+      "id": "c2",
+      "group_id": "g1",
+      "type": "qa",
+      "front": "Which planet is the hottest in the Solar System, and why?",
+      "back": "Venus, because its thick carbon dioxide atmosphere traps heat (a runaway greenhouse effect).",
+      "created_at": "2026-10-21T20:00:00Z",
+      "updated_at": "2026-10-21T20:00:00Z"
+    },
+    {
+      "id": "c3",
+      "group_id": "g1",
+      "type": "qa",
+      "front": "What gives Mars its reddish color?",
+      "back": "Iron oxide (rust) on its surface.",
+      "created_at": "2026-10-21T20:00:00Z",
+      "updated_at": "2026-10-21T20:00:00Z"
+    },
+    {
+      "id": "c4",
+      "group_id": "g1",
+      "type": "term",
+      "front": "Terrestrial planet",
+      "back": "A rocky planet with a solid surface; Mercury, Venus, Earth and Mars.",
+      "created_at": "2026-10-21T20:00:00Z",
+      "updated_at": "2026-10-21T20:00:00Z"
+    },
+    {
+      "id": "c5",
+      "group_id": "g1",
+      "type": "qa",
+      "front": "Which inner planet has the most substantial liquid surface water?",
+      "back": "Earth.",
+      "created_at": "2026-10-21T20:00:00Z",
+      "updated_at": "2026-10-21T20:00:00Z"
+    },
+    {
+      "id": "c6",
+      "group_id": "g2",
+      "type": "qa",
+      "front": "Which is the largest planet in the Solar System?",
+      "back": "Jupiter.",
+      "created_at": "2026-10-21T20:00:00Z",
+      "updated_at": "2026-10-21T20:00:00Z"
+    },
+    {
+      "id": "c7",
+      "group_id": "g2",
+      "type": "qa",
+      "front": "Which planet is best known for its prominent ring system?",
+      "back": "Saturn.",
+      "created_at": "2026-10-21T20:00:00Z",
+      "updated_at": "2026-10-21T20:00:00Z"
+    },
+    {
+      "id": "c8",
+      "group_id": "g2",
+      "type": "term",
+      "front": "Gas giant",
+      "back": "A large planet made mostly of hydrogen and helium; Jupiter and Saturn.",
+      "created_at": "2026-10-21T20:00:00Z",
+      "updated_at": "2026-10-21T20:00:00Z"
+    },
+    {
+      "id": "c9",
+      "group_id": "g2",
+      "type": "term",
+      "front": "Ice giant",
+      "back": "A planet made mostly of heavier volatiles such as water, ammonia and methane; Uranus and Neptune.",
+      "created_at": "2026-10-21T20:00:00Z",
+      "updated_at": "2026-10-21T20:00:00Z"
+    },
+    {
+      "id": "c10",
+      "group_id": "g2",
+      "type": "qa",
+      "front": "Which planet rotates on its side, with an axial tilt of about 98 degrees?",
+      "back": "Uranus.",
+      "created_at": "2026-10-21T20:00:00Z",
+      "updated_at": "2026-10-21T20:00:00Z"
+    },
+    {
+      "id": "c11",
+      "group_id": "g3",
+      "type": "term",
+      "front": "Asteroid belt",
+      "back": "The region between the orbits of Mars and Jupiter that holds most asteroids.",
+      "created_at": "2026-10-21T20:00:00Z",
+      "updated_at": "2026-10-21T20:00:00Z"
+    },
+    {
+      "id": "c12",
+      "group_id": "g3",
+      "type": "term",
+      "front": "Comet",
+      "back": "An icy body that develops a glowing coma and tail when it nears the Sun.",
+      "created_at": "2026-10-21T20:00:00Z",
+      "updated_at": "2026-10-21T20:00:00Z"
+    },
+    {
+      "id": "c13",
+      "group_id": "g3",
+      "type": "qa",
+      "front": "What is the largest object in the asteroid belt?",
+      "back": "Ceres, which is classified as a dwarf planet.",
+      "created_at": "2026-10-21T20:00:00Z",
+      "updated_at": "2026-10-21T20:00:00Z"
+    },
+    {
+      "id": "c14",
+      "group_id": "g3",
+      "type": "term",
+      "front": "Dwarf planet",
+      "back": "A body that orbits the Sun and is round, but has not cleared its orbital neighborhood.",
+      "created_at": "2026-10-21T20:00:00Z",
+      "updated_at": "2026-10-21T20:00:00Z"
+    },
+    {
+      "id": "c15",
+      "group_id": "g3",
+      "type": "qa",
+      "front": "What is the Kuiper Belt?",
+      "back": "A region of icy bodies beyond Neptune's orbit, home to Pluto and other dwarf planets.",
+      "created_at": "2026-10-21T20:00:00Z",
+      "updated_at": "2026-10-21T20:00:00Z"
+    }
+  ]
+}
