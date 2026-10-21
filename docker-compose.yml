@@ -1,0 +1,20 @@
+services:
+  backend:
+    build: ./backend
+    environment:
+      # Read from your shell or the .env file next to this compose file.
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      ANTHROPIC_MODEL: ${ANTHROPIC_MODEL:-claude-sonnet-5-5}
+      MAX_UPLOAD_MB: ${MAX_UPLOAD_MB:-25}
+      DECKS_DIR: /decks
+    volumes:
+      - ./decks:/decks
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
