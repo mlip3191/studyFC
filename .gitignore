@@ -23,3 +23,8 @@ Thumbs.db
 
 # deck temp files (decks/*.json ARE committed)
 decks/*.tmp
+
+# logs
+*.log
+.be.log
+.fe.log
