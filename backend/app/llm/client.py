@@ -23,6 +23,7 @@ MAX_DELAY_SECONDS = 60.0
 TOOL = {
     "name": TOOL_NAME,
     "description": "Submit the flashcards created for this section of the document.",
+    "strict": True,
     "input_schema": {
         "type": "object",
         "properties": {
@@ -44,10 +45,12 @@ TOOL = {
                         },
                     },
                     "required": ["type", "front", "back", "group_name"],
+                    "additionalProperties": False,
                 },
             }
         },
         "required": ["cards"],
+        "additionalProperties": False,
     },
 }
 
@@ -158,7 +161,9 @@ class ClaudeClient:
                 {"type": "text", "text": system_prompt(), "cache_control": {"type": "ephemeral"}}
             ],
             tools=[TOOL],
-            tool_choice={"type": "tool", "name": TOOL_NAME},
+            # Forced tool_choice is rejected by newer models; the prompt instructs the tool call
+            # and `strict` keeps the arguments schema-valid.
+            tool_choice={"type": "auto"},
             messages=[
                 {
                     "role": "user",

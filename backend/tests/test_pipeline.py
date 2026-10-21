@@ -208,7 +208,7 @@ def call(client):
     )
 
 
-def test_client_sends_forced_tool_call_and_parses_cards():
+def test_client_sends_tool_call_and_parses_cards():
     good = {"type": "term", "front": "f", "back": "b", "group_name": "g"}
     bad = {"type": "nonsense", "front": "x"}
     client, sdk, _ = make_client([tool_message([good, bad])])
@@ -216,7 +216,8 @@ def test_client_sends_forced_tool_call_and_parses_cards():
     assert [c.front for c in cards] == ["f"]
     kwargs = sdk.calls[0]
     assert kwargs["model"] == "test-model"
-    assert kwargs["tool_choice"] == {"type": "tool", "name": TOOL_NAME}
+    assert kwargs["tool_choice"] == {"type": "auto"}
+    assert kwargs["tools"][0]["strict"] is True
     assert kwargs["tools"][0]["name"] == TOOL_NAME
 
 
