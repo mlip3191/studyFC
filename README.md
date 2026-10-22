@@ -16,12 +16,80 @@ A small sample deck (`decks/solar-system-basics.json`) ships with the repo, so y
 
 ```bash
 cp .env.example .env        # then put your ANTHROPIC_API_KEY in .env
-docker compose up --build
+docker compose up --build   # full step-by-step: see "Deploy" below
 ```
 
 Open <http://localhost:8080>. From a phone on the same network, use `http://<your-computer-ip>:8080`.
 
 `./decks` is mounted into the container, so decks you create are plain files in your repo. The app works without an API key; only generating new decks needs one.
+
+## Deploy: step by step
+
+These are the exact steps to run the app on any machine (your computer, a home server or a VM) with Docker.
+
+**1. Install the requirements**
+
+- [Git](https://git-scm.com/downloads)
+- [Docker](https://docs.docker.com/get-docker/) with Compose v2 (Docker Desktop on Windows/macOS includes it). Make sure it is running: `docker info` should print without errors.
+
+**2. Get the code**
+
+```bash
+git clone https://github.com/mlip3191/studyFC.git
+cd studyFC
+```
+
+**3. Create your `.env` file** (this is where the API keys go; it is gitignored)
+
+```bash
+cp .env.example .env        # Windows PowerShell: Copy-Item .env.example .env
+```
+
+Open `.env` in a text editor and replace the placeholder values:
+
+| Line in `.env`                         | What to put there                                                              | Used by the app? |
+| -------------------------------------- | ------------------------------------------------------------------------------ | ---------------- |
+| `ANTHROPIC_API_KEY=your-anthropic-api-key-here` | Your key from <https://console.anthropic.com/> (API keys). Starts with `sk-ant-`. | **Yes, required to generate decks** |
+| `OPENAI_API_KEY=your-openai-api-key-here`       | OpenAI key (<https://platform.openai.com/api-keys>)                           | No, placeholder  |
+| `XAI_API_KEY=your-xai-grok-api-key-here`        | xAI Grok key (<https://console.x.ai/>)                                        | No, placeholder  |
+| `GEMINI_API_KEY=your-google-gemini-api-key-here`| Google Gemini key (<https://aistudio.google.com/apikey>)                      | No, placeholder  |
+
+Only the Anthropic (Claude) key does anything today. The OpenAI, Grok and Gemini lines are placeholders for future support; the app ignores them, so you can leave them as they are or delete them. Put the value right after the `=` with no quotes or spaces, for example `ANTHROPIC_API_KEY=sk-ant-...`.
+
+Without an Anthropic key the app still starts: you can browse, edit and study decks, but generating a new deck (or "Give more information") shows a clear error.
+
+**4. Build and start**
+
+```bash
+docker compose up -d --build
+```
+
+The first build takes a few minutes. Check that it is healthy:
+
+```bash
+docker compose ps                      # both services should be "Up"
+curl http://localhost:8080/api/health  # {"status":"ok"}
+```
+
+**5. Open the app** at <http://localhost:8080>. On a phone or another computer on the same network, use `http://<the-host-ip>:8080` and allow port 8080 in the host's firewall if needed.
+
+**Everyday commands**
+
+```bash
+docker compose logs -f backend        # watch the backend log
+docker compose down                   # stop
+git pull && docker compose up -d --build   # update to the latest version
+```
+
+After editing `.env`, run `docker compose up -d` again so the backend picks up the new values.
+
+Your decks are the JSON files in `./decks` (mounted into the container), so they survive rebuilds. Back that folder up if the decks matter to you.
+
+**Security notes**
+
+- The app has **no login**. Run it on your own computer or a private network. Do not expose port 8080 to the public internet unless you put it behind authentication (a VPN such as Tailscale, or a reverse proxy with auth).
+- Anyone who can open the app can use your Anthropic key to generate decks, which costs money.
+- Never commit `.env`. If a key leaks, revoke it in the provider's console and create a new one.
 
 ## Development setup
 
