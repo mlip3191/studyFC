@@ -1,7 +1,7 @@
 from functools import lru_cache
 from pathlib import Path
 
-from pydantic import Field
+from pydantic import Field, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -17,6 +17,13 @@ class Settings(BaseSettings):
     anthropic_model: str = "claude-sonnet-5-5"
     decks_dir: Path = Field(default=Path("./decks"))
     max_upload_mb: int = 25
+
+    @field_validator("anthropic_api_key")
+    @classmethod
+    def _ignore_placeholder_key(cls, value: str) -> str:
+        """The untouched .env.example placeholder counts as "no key"."""
+        value = value.strip()
+        return "" if value.lower().startswith("your-") else value
 
     @property
     def resolved_decks_dir(self) -> Path:
