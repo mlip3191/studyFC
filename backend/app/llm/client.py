@@ -10,7 +10,14 @@ import anthropic
 from pydantic import ValidationError
 
 from app.llm.merge import RawCard
-from app.llm.templates import Density, system_prompt, user_prompt
+from app.llm.more_info import MoreInfo, extract_more_info
+from app.llm.templates import (
+    Density,
+    more_info_system_prompt,
+    more_info_user_prompt,
+    system_prompt,
+    user_prompt,
+)
 
 log = logging.getLogger(__name__)
 
@@ -19,6 +26,10 @@ MAX_OUTPUT_TOKENS = 16_000
 MAX_ATTEMPTS = 5
 BASE_DELAY_SECONDS = 2.0
 MAX_DELAY_SECONDS = 60.0
+
+MORE_INFO_MAX_TOKENS = 4_000
+MAX_CONTINUATIONS = 3
+WEB_SEARCH_TOOL = {"type": "web_search_20260209", "name": "web_search", "max_uses": 3}
 
 TOOL = {
     "name": TOOL_NAME,
@@ -81,6 +92,12 @@ class CardGenerator(Protocol):
         density: Density,
         group_names: list[str],
     ) -> list[RawCard]: ...
+
+
+class CardExplainer(Protocol):
+    def explain(
+        self, *, deck_title: str, group_name: str, card_type: str, front: str, back: str
+    ) -> MoreInfo: ...
 
 
 def _is_transient(exc: Exception) -> bool:
@@ -180,6 +197,53 @@ class ClaudeClient:
         if message.stop_reason == "max_tokens":
             raise TruncatedResponseError("The model ran out of output space for this section.")
         return parse_tool_result(message)
+
+    def explain(
+        self, *, deck_title: str, group_name: str, card_type: str, front: str, back: str
+    ) -> MoreInfo:
+        """Explain a card in more depth, using web search to find real sources."""
+        messages: list[dict] = [
+            {
+                "role": "user",
+                "content": more_info_user_prompt(
+                    deck_title=deck_title,
+                    group_name=group_name,
+                    card_type=card_type,
+                    front=front,
+                    back=back,
+                ),
+            }
+        ]
+        try:
+            return self._explain_loop(messages, tools=[WEB_SEARCH_TOOL])
+        except GenerationError as exc:
+            # Web search can be switched off for the organisation; still give an explanation.
+            if "rejected the request" not in str(exc):
+                raise
+            log.warning("Web search unavailable (%s); explaining without sources", exc)
+            return self._explain_loop(messages, tools=[])
+
+    def _explain_loop(self, messages: list[dict], tools: list[dict]) -> MoreInfo:
+        content: list = []
+        for _ in range(MAX_CONTINUATIONS + 1):
+            kwargs: dict = {
+                "model": self.model,
+                "max_tokens": MORE_INFO_MAX_TOKENS,
+                "system": more_info_system_prompt(),
+                "messages": messages,
+            }
+            if tools:
+                kwargs["tools"] = tools
+            message = self._create(**kwargs)
+            content.extend(message.content)
+            if message.stop_reason != "pause_turn":
+                break
+            # The server paused a long search turn; send it back unchanged to resume.
+            messages = [*messages[:1], {"role": "assistant", "content": list(content)}]
+        info = extract_more_info(content)
+        if not info.explanation:
+            raise GenerationError("The model did not return an explanation. Try again.")
+        return info
 
 
 def parse_tool_result(message) -> list[RawCard]:

@@ -113,6 +113,15 @@ One file per deck at `decks/<slug>.json`, pretty-printed (2-space indent, stable
 
 Card `type` is `qa` (question → answer) or `term` (term → definition; can be studied in either direction). Files are validated on load; an invalid file shows up as an error in the deck list instead of breaking the app.
 
+## More information on a card
+
+Every card has a **Give more information** button, in the deck editor and on the answer side while studying. It asks Claude for a short explanation of the card's topic, using web search, and shows clickable links to the sources it found (they open in a new tab).
+
+- Needs `ANTHROPIC_API_KEY`. Each click is one extra API request (a few cents at most, more when it searches).
+- Web search must be enabled for your organization in the Anthropic Console. If it isn't, you still get an explanation, just without links.
+- The explanation is AI-generated and can go beyond your study guide, so it is labeled as such. Nothing is saved to the deck.
+- Its prompts are `backend/app/llm/prompts/more_info_*.md`.
+
 ## Tuning the prompts
 
 All prompt text lives in `backend/app/llm/prompts/` as plain Markdown:
@@ -137,7 +146,7 @@ Exhaustive density produces more cards, so it costs more (output tokens dominate
 
 ## API
 
-REST under `/api` (interactive docs at `/api/docs` when running the backend directly): `GET/PATCH/DELETE /decks/{id}`, groups and cards under `/decks/{id}/groups` and `/decks/{id}/cards`, `POST /generate`, `GET /jobs/{id}`, `GET /health`, `GET /config`.
+REST under `/api` (interactive docs at `/api/docs` when running the backend directly): `GET/PATCH/DELETE /decks/{id}`, groups and cards under `/decks/{id}/groups` and `/decks/{id}/cards`, `POST /decks/{id}/cards/{cid}/more-info`, `POST /generate`, `GET /jobs/{id}`, `GET /health`, `GET /config`.
 
 ## Project layout
 

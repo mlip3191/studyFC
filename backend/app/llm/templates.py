@@ -49,6 +49,30 @@ def user_prompt(
         "existing_groups": _existing_groups_block(group_names),
         "document_text": chunk_text,
     }
-    template = _read("chunk_user.md")
-    # Single pass so placeholder-like text inside the document is never substituted.
-    return re.sub(r"\{\{(\w+)\}\}", lambda m: values.get(m.group(1), m.group(0)), template)
+    return _render("chunk_user.md", values)
+
+
+def _render(template_name: str, values: dict[str, str]) -> str:
+    # Single pass so placeholder-like text inside a value is never substituted.
+    return re.sub(
+        r"\{\{(\w+)\}\}", lambda m: values.get(m.group(1), m.group(0)), _read(template_name)
+    )
+
+
+def more_info_system_prompt() -> str:
+    return _read("more_info_system.md")
+
+
+def more_info_user_prompt(
+    *, deck_title: str, group_name: str, card_type: str, front: str, back: str
+) -> str:
+    return _render(
+        "more_info_user.md",
+        {
+            "deck_title": deck_title,
+            "group_name": group_name,
+            "card_type": "term and definition" if card_type == "term" else "question and answer",
+            "front": front,
+            "back": back,
+        },
+    )

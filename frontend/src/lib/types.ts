@@ -94,6 +94,16 @@ export interface GroupPatch {
   order?: number
 }
 
+export interface MoreInfoSource {
+  title: string
+  url: string
+}
+
+export interface MoreInfo {
+  explanation: string
+  sources: MoreInfoSource[]
+}
+
 export interface GenerateInput {
   file?: File
   text?: string
