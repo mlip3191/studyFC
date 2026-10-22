@@ -17,7 +17,7 @@ function makeQueue(n: number): StudyCard[] {
 function setup(n = 4, shuffle = false) {
   const onExit = vi.fn()
   const user = userEvent.setup()
-  render(<StudyFlow initialQueue={makeQueue(n)} shuffle={shuffle} onExit={onExit} />)
+  render(<StudyFlow deckId="deck1" initialQueue={makeQueue(n)} shuffle={shuffle} onExit={onExit} />)
   return { user, onExit }
 }
 

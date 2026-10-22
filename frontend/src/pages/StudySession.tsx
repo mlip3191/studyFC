@@ -35,6 +35,7 @@ export default function StudySession() {
 
   return (
     <StudyFlow
+      deckId={deckId}
       initialQueue={queue}
       shuffle={options.shuffle}
       onExit={() => navigate(`/decks/${deckId}`)}

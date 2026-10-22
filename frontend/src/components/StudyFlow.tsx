@@ -18,10 +18,12 @@ type Phase =
  * the missed cards, and can be repeated until nothing is missed. All state is in memory.
  */
 export default function StudyFlow({
+  deckId,
   initialQueue,
   shuffle,
   onExit,
 }: {
+  deckId: string
   initialQueue: StudyCard[]
   shuffle: boolean
   onExit: () => void
@@ -37,7 +39,7 @@ export default function StudyFlow({
       return <ResultsView summary={summarize([])} onReviewMissed={onExit} onBack={onExit} />
     }
     // `key` gives every round a fresh SessionView (and so a fresh session state).
-    return <SessionView key={phase.round} queue={phase.queue} onFinish={finish} />
+    return <SessionView key={phase.round} deckId={deckId} queue={phase.queue} onFinish={finish} />
   }
 
   return (

@@ -1,5 +1,7 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Request
 
+from app.llm.client import GenerationError, MissingApiKeyError
+from app.llm.more_info import MoreInfo
 from app.models import Card, Deck, new_id, now
 from app.routers.deps import get_repo
 from app.routers.schemas import CardCreate, CardPatch
@@ -65,3 +67,26 @@ def delete_card(deck_id: str, card_id: str, repo: DeckRepository = Depends(get_r
         deck.cards.remove(_require_card(deck, card_id))
 
     return repo.update(deck_id, mutate)
+
+
+@router.post("/{card_id}/more-info", response_model=MoreInfo)
+def more_info(
+    deck_id: str, card_id: str, request: Request, repo: DeckRepository = Depends(get_repo)
+) -> MoreInfo:
+    """Ask Claude (with web search) to explain a card in more depth, with source links."""
+    deck = repo.get(deck_id)
+    card = _require_card(deck, card_id)
+    group = deck.group_by_id(card.group_id)
+    try:
+        client = request.app.state.generator_factory()
+        return client.explain(
+            deck_title=deck.title,
+            group_name=group.name if group else "",
+            card_type=card.type,
+            front=card.front,
+            back=card.back,
+        )
+    except MissingApiKeyError as exc:
+        raise HTTPException(400, str(exc)) from exc
+    except GenerationError as exc:
+        raise HTTPException(502, str(exc)) from exc

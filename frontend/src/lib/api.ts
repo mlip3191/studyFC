@@ -7,6 +7,7 @@ import type {
   GenerateInput,
   GroupPatch,
   Job,
+  MoreInfo,
 } from './types'
 
 export class ApiError extends Error {
@@ -93,6 +94,9 @@ export const api = {
     request<Deck>(`/decks/${enc(deckId)}/cards/${enc(cardId)}`, json('PATCH', patch)),
   deleteCard: (deckId: string, cardId: string) =>
     request<Deck>(`/decks/${enc(deckId)}/cards/${enc(cardId)}`, { method: 'DELETE' }),
+
+  moreInfo: (deckId: string, cardId: string) =>
+    request<MoreInfo>(`/decks/${enc(deckId)}/cards/${enc(cardId)}/more-info`, { method: 'POST' }),
 
   generate: (input: GenerateInput) => {
     const form = new FormData()

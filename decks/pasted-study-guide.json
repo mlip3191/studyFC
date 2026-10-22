@@ -1,0 +1,486 @@
+{
+  "schema_version": 1,
+  "id": "8881d3",
+  "title": "Pasted study guide",
+  "source": {
+    "filename": "pasted text",
+    "type": "text",
+    "imported_at": "2026-10-21T22:14:00Z"
+  },
+  "created_at": "2026-10-21T22:14:00Z",
+  "updated_at": "2026-10-21T22:14:00Z",
+  "groups": [
+    {
+      "id": "26aca1",
+      "name": "Overview of Bias Families",
+      "order": 0
+    },
+    {
+      "id": "bfb0c6",
+      "name": "Belief Perseverance Biases",
+      "order": 1
+    },
+    {
+      "id": "e86d50",
+      "name": "Information-Processing Biases",
+      "order": 2
+    },
+    {
+      "id": "c2c3d1",
+      "name": "Emotional Biases",
+      "order": 3
+    }
+  ],
+  "cards": [
+    {
+      "id": "263f17",
+      "group_id": "26aca1",
+      "type": "qa",
+      "front": "What are the three families into which Pompian groups the 20 investor biases?",
+      "back": "Belief-perseverance cognitive biases, information-processing cognitive biases, and emotional biases.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "be884c",
+      "group_id": "26aca1",
+      "type": "qa",
+      "front": "Why are emotional biases harder to correct than cognitive biases?",
+      "back": "They stem from feeling and impulse rather than faulty reasoning, so education alone rarely fixes them.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "909f59",
+      "group_id": "bfb0c6",
+      "type": "term",
+      "front": "Cognitive dissonance bias",
+      "back": "Mental discomfort when new information conflicts with an existing belief, usually resolved by distorting the new information rather than updating the belief.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "0dce9d",
+      "group_id": "bfb0c6",
+      "type": "qa",
+      "front": "What two sub-behaviors drive cognitive dissonance in investors?",
+      "back": "Selective perception (registering only supportive information) and selective decision making (sticking with a prior commitment despite cost).",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "a72e34",
+      "group_id": "bfb0c6",
+      "type": "term",
+      "front": "Conservatism bias",
+      "back": "Clinging to a prior view or forecast and underreacting to new contradictory information; it explains market underreaction to news.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "5dd247",
+      "group_id": "bfb0c6",
+      "type": "term",
+      "front": "Confirmation bias",
+      "back": "Seeking and overweighting information that supports an existing belief while ignoring or discounting contradicting information.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "2044fd",
+      "group_id": "bfb0c6",
+      "type": "qa",
+      "front": "What is the main remedy for confirmation bias?",
+      "back": "Deliberately seek out disconfirming evidence and treat contrary information as useful data.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "86c25b",
+      "group_id": "bfb0c6",
+      "type": "term",
+      "front": "Representativeness bias",
+      "back": "Judging probability by how well something matches an existing mental category rather than by actual statistics.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "48477a",
+      "group_id": "bfb0c6",
+      "type": "term",
+      "front": "Base-rate neglect",
+      "back": "Assuming something belongs to a category because it resembles it while ignoring the true base rate (e.g., buying a hyped IPO although most IPOs underperform).",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "290c6c",
+      "group_id": "bfb0c6",
+      "type": "term",
+      "front": "Sample-size neglect",
+      "back": "Drawing confident conclusions about skill from very few observations, which more likely reflects luck (the \"law of small numbers\").",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "1dff77",
+      "group_id": "bfb0c6",
+      "type": "term",
+      "front": "Illusion of control bias",
+      "back": "Believing you can influence outcomes that are actually governed by chance; leads to excessive trading and underdiversification.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "632dcf",
+      "group_id": "bfb0c6",
+      "type": "term",
+      "front": "Hindsight bias",
+      "back": "The \"I knew it all along\" effect: after an outcome is known, believing it was predictable and that you foresaw it.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "a21f11",
+      "group_id": "bfb0c6",
+      "type": "qa",
+      "front": "How does hindsight bias harm investor learning?",
+      "back": "It makes gains look foreseeable (fueling excess risk-taking) and losses look like bad luck (blocking self-examination).",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "833a2f",
+      "group_id": "e86d50",
+      "type": "term",
+      "front": "Mental accounting bias",
+      "back": "Treating money differently depending on its mental \"bucket\" (source, purpose, account) rather than recognizing money is fungible.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "a7a9e7",
+      "group_id": "e86d50",
+      "type": "term",
+      "front": "House money effect",
+      "back": "Taking more risk with recent gains as if playing with the casino's money rather than one's own.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "7ea205",
+      "group_id": "e86d50",
+      "type": "qa",
+      "front": "How can mental accounting be constructive?",
+      "back": "Goals-based planning uses it to protect goal buckets (e.g., retirement) and match each goal to an appropriate risk level.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "4c1102",
+      "group_id": "e86d50",
+      "type": "term",
+      "front": "Anchoring and adjustment bias",
+      "back": "Fixating on an initial reference point and adjusting insufficiently away from it despite new information.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "f50d83",
+      "group_id": "e86d50",
+      "type": "term",
+      "front": "Framing bias",
+      "back": "Responding differently to the same facts depending on how they are presented (gains vs. losses, wording, ranges); includes narrow framing.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "9cc026",
+      "group_id": "e86d50",
+      "type": "qa",
+      "front": "What did Kahneman and Tversky's \"Asian disease\" experiment show?",
+      "back": "People choose the safe option when framed as lives saved but the risky option when the same policy is framed as lives lost.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "9df894",
+      "group_id": "e86d50",
+      "type": "term",
+      "front": "Narrow framing",
+      "back": "Evaluating one piece of a decision in isolation rather than in the context of the whole portfolio or long-term goal.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "dc1258",
+      "group_id": "e86d50",
+      "type": "term",
+      "front": "Availability bias",
+      "back": "Judging likelihood or importance by how easily examples come to mind rather than by actual frequency.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "b923ed",
+      "group_id": "e86d50",
+      "type": "qa",
+      "front": "What are the four sub-types of availability bias?",
+      "back": "Retrievability, categorization, narrow range of experience, and resonance.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "b63346",
+      "group_id": "e86d50",
+      "type": "term",
+      "front": "Self-attribution bias",
+      "back": "Crediting successes to one's own skill while blaming failures on bad luck or external factors; includes self-enhancing and self-protecting forms.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "dcbf25",
+      "group_id": "e86d50",
+      "type": "qa",
+      "front": "What did Gervais and Odean's model say about early trading success?",
+      "back": "It breeds overconfidence, leading to excessive trading, lower returns, and higher market volatility.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "43331e",
+      "group_id": "e86d50",
+      "type": "term",
+      "front": "Outcome bias",
+      "back": "Judging a decision's quality by how it turned out rather than by the quality of the decision process at the time.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "207548",
+      "group_id": "e86d50",
+      "type": "term",
+      "front": "Recency bias",
+      "back": "Overweighting recent events or data relative to older ones when forming judgments or forecasts.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "cc616c",
+      "group_id": "e86d50",
+      "type": "qa",
+      "front": "What tool helps counter recency bias and return-chasing?",
+      "back": "The \"periodic table of investment returns,\" showing how unpredictable year-to-year asset-class leadership is, supporting diversification.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "b47c08",
+      "group_id": "c2c3d1",
+      "type": "term",
+      "front": "Loss aversion bias",
+      "back": "Feeling the pain of a loss roughly twice as intensely as the pleasure of an equivalent gain (prospect theory).",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "194157",
+      "group_id": "c2c3d1",
+      "type": "term",
+      "front": "Disposition effect",
+      "back": "Holding losing positions too long while selling winners too early.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "489ef5",
+      "group_id": "c2c3d1",
+      "type": "qa",
+      "front": "What is myopic loss aversion (Benartzi and Thaler)?",
+      "back": "Investors who check portfolios frequently notice short-term losses and shift toward bonds, despite a long horizon favoring equities.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "7cc6d5",
+      "group_id": "c2c3d1",
+      "type": "term",
+      "front": "Overconfidence bias",
+      "back": "Unwarranted faith in one's own judgment, predictions, or information quality.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "a8a347",
+      "group_id": "c2c3d1",
+      "type": "qa",
+      "front": "What are the two forms of overconfidence?",
+      "back": "Prediction overconfidence (too-narrow confidence intervals) and certainty overconfidence (too sure a judgment is correct).",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "280ccf",
+      "group_id": "c2c3d1",
+      "type": "qa",
+      "front": "What did Barber and Odean's \"Boys Will Be Boys\" study find?",
+      "back": "More active traders earned lower returns; men traded more and underperformed more, and sold securities outperformed those bought.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "2bf6a3",
+      "group_id": "c2c3d1",
+      "type": "term",
+      "front": "Self-control bias",
+      "back": "Failing to act on long-term goals due to insufficient discipline, favoring present gratification over future benefit.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "436818",
+      "group_id": "c2c3d1",
+      "type": "qa",
+      "front": "What is the \"Save More Tomorrow\" program?",
+      "back": "A Thaler and Benartzi plan that pre-commits employees to raise 401(k) contributions automatically with future pay raises, overcoming self-control limits.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "9426c5",
+      "group_id": "c2c3d1",
+      "type": "term",
+      "front": "Status quo bias",
+      "back": "Preferring the option that maintains the current state of affairs regardless of whether an alternative would be better.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "018d93",
+      "group_id": "c2c3d1",
+      "type": "term",
+      "front": "Endowment bias",
+      "back": "Valuing something more highly simply because you own it; willingness to accept exceeds willingness to pay.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "b3a1a1",
+      "group_id": "c2c3d1",
+      "type": "qa",
+      "front": "What did John List's research find about endowment bias?",
+      "back": "It shrinks with trading experience: professional dealers showed little effect while novices showed a strong one.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "65fbb5",
+      "group_id": "c2c3d1",
+      "type": "term",
+      "front": "Regret aversion bias",
+      "back": "Avoiding decisive action for fear the choice will look wrong in hindsight; avoiding the pain of regret itself.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "a88fb1",
+      "group_id": "c2c3d1",
+      "type": "qa",
+      "front": "Which type of regret is usually stronger: commission or omission?",
+      "back": "Errors of commission (active actions that turned out badly) cause more intense regret than errors of omission.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "b39564",
+      "group_id": "c2c3d1",
+      "type": "term",
+      "front": "Affinity bias",
+      "back": "Making choices based on how well a product or company reflects one's values or self-image (expressive value) rather than its utilitarian value.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "e62b99",
+      "group_id": "c2c3d1",
+      "type": "term",
+      "front": "Patriotism / home-country bias",
+      "back": "A form of affinity bias in which investors overweight domestic securities out of loyalty or familiarity rather than for optimal diversification.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "ef5b32",
+      "group_id": "c2c3d1",
+      "type": "qa",
+      "front": "What did Morse and Shive's \"Patriotism in Your Portfolio\" find about U.S. investors' domestic equity holdings?",
+      "back": "U.S. investors hold about 92% of equity in domestic stock versus a theoretically optimal ~33%, and more \"patriotic\" regions show stronger home bias.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "464e5a",
+      "group_id": "c2c3d1",
+      "type": "qa",
+      "front": "What is the main caution about affinity-driven investing such as ESG or brand-based choices?",
+      "back": "The caution is about skipping rigorous financial due diligence, not about ESG investing itself (research on ESG performance is mixed).",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "9c1375",
+      "group_id": "c2c3d1",
+      "type": "qa",
+      "front": "How should an advisor counter affinity bias in a client's portfolio?",
+      "back": "Separate the emotional appeal of an asset from an independent assessment of its merits, quantify domestic versus international exposure, and ensure the client understands the real risk and return of status or values investments.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "a38a98",
+      "group_id": "26aca1",
+      "type": "qa",
+      "front": "Why do cognitive biases and emotional biases call for different treatment?",
+      "back": "Cognitive biases stem from faulty reasoning and respond to education and better information (correction). Emotional biases stem from feeling, so they generally require accommodation of the client's psychology.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "97b41d",
+      "group_id": "26aca1",
+      "type": "qa",
+      "front": "Which biases often combine to lock investors into inappropriate, inherited or long-held positions?",
+      "back": "Loss aversion, status quo bias and endowment bias.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "92965e",
+      "group_id": "26aca1",
+      "type": "qa",
+      "front": "Which two biases jointly distort return expectations in Montier's model?",
+      "back": "Anchoring and recency bias.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "2cafa1",
+      "group_id": "26aca1",
+      "type": "term",
+      "front": "Periodic table of investment returns (as a remedy)",
+      "back": "A chart showing how unpredictably asset classes lead from year to year. It is a persuasive visual that diversification beats performance-chasing.",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    },
+    {
+      "id": "80d30d",
+      "group_id": "26aca1",
+      "type": "qa",
+      "front": "What diagnostic question separates a rational holding from an emotionally anchored one?",
+      "back": "\"If you didn't already own this, would you buy the same amount today?\"",
+      "created_at": "2026-10-21T22:14:00Z",
+      "updated_at": "2026-10-21T22:14:00Z"
+    }
+  ]
+}

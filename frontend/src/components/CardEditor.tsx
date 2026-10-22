@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { api } from '../lib/api'
 import type { Card, CardType, Deck, Group } from '../lib/types'
 import { btnGhost, input } from '../lib/ui'
+import MoreInfoPanel from './MoreInfoPanel'
 import type { RunFn } from './runTypes'
 
 const TYPE_LABEL: Record<CardType, string> = { qa: 'Question / answer', term: 'Term / definition' }
@@ -85,6 +86,7 @@ export default function CardEditor({
           onBlur={() => saveText('back')}
         />
       </label>
+      <MoreInfoPanel deckId={deckId} cardId={card.id} />
       <div className="flex justify-end">
         <button
           type="button"

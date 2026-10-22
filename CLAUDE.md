@@ -23,6 +23,7 @@ docker compose up --build   # http://localhost:8080
 - Missing `ANTHROPIC_API_KEY` must only block generation (`POST /api/generate` returns 400 with a clear message); everything else works.
 - Generation request is parsed synchronously (clear 400s for bad/scanned files), the LLM work runs as a background job polled via `GET /api/jobs/{id}`.
 - Newer Claude models reject forced `tool_choice`; the client uses `auto` plus a `strict` tool and the prompt tells the model to call `submit_flashcards`.
+- "More information" (`ClaudeClient.explain`, `llm/more_info.py`) uses the web search server tool; `pause_turn` is resumed in a loop, and sources come from citations first, search results second (http/https only). It falls back to no-search if the tool is rejected. Results are never stored.
 - All deck mutations go through `DeckRepository.update` (read-modify-write under a lock) and return the full updated `Deck`.
 - Deck file format changes need a `schema_version` bump and a migration path. Keep key order stable so git diffs stay clean.
 - Prompt text lives only in `backend/app/llm/prompts/`; templates use `{{placeholder}}` and are cached with `lru_cache`.

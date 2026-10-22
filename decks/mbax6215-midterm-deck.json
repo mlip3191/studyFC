@@ -1,0 +1,895 @@
+{
+  "deck": "MBAX 6215 Wealth Management — Midterm",
+  "source": "MBAX 6215 Midterm Study Guide F26 + cheat sheet",
+  "groups": [
+    {
+      "id": "formulas",
+      "name": "Formulas (A–F)"
+    },
+    {
+      "id": "behavior",
+      "name": "Behavioral finance"
+    },
+    {
+      "id": "basics",
+      "name": "Banking, statements & budget"
+    },
+    {
+      "id": "ips",
+      "name": "Investment policy statements"
+    },
+    {
+      "id": "taxes",
+      "name": "Taxes"
+    },
+    {
+      "id": "measures",
+      "name": "Equity: returns & risk measures"
+    },
+    {
+      "id": "equity",
+      "name": "Equity: strategy & practice"
+    },
+    {
+      "id": "readings",
+      "name": "Readings"
+    }
+  ],
+  "cards": [
+    {
+      "id": "formulas-1",
+      "group": "formulas",
+      "ref": "Formula A",
+      "type": "calc",
+      "front": "Sharpe ratio",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">Sharpe = (R<sub>p</sub> − R<sub>f</sub>) ÷ σ<sub>p</sub></div>\n<p>Excess return earned per unit of <b>total risk</b> (standard deviation). Higher is better.</p>\n<p class=\"ex\"><b>Example:</b> R<sub>p</sub> 10%, R<sub>f</sub> 3%, σ 14% → 7 ÷ 14 = <b>0.50</b></p>\n<ul>\n<li>Use it when the portfolio is the client's <b>whole portfolio</b>, so total risk (including diversifiable risk) matters.</li>\n<li>Penalizes upside and downside volatility equally.</li>\n<li>Comparing funds: the higher Sharpe delivered more return per unit of risk taken.</li>\n</ul>"
+    },
+    {
+      "id": "formulas-2",
+      "group": "formulas",
+      "ref": "Formula B",
+      "type": "calc",
+      "front": "Sortino ratio",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">Sortino = (R<sub>p</sub> − R<sub>f</sub> or MAR) ÷ downside deviation</div>\n<p>Excess return per unit of <b>downside</b> risk. Only volatility below the target (R<sub>f</sub> or a minimum acceptable return, MAR) counts, so upside swings are not penalized.</p>\n<p class=\"ex\"><b>Example:</b> R<sub>p</sub> 10%, R<sub>f</sub> 3%, downside deviation 8% → 7 ÷ 8 = <b>0.875</b></p>\n<ul>\n<li>Use it for asymmetric return patterns (options strategies, hedge funds) or loss-focused clients.</li>\n<li>Same numerator as Sharpe; only the denominator differs.</li>\n</ul>"
+    },
+    {
+      "id": "formulas-3",
+      "group": "formulas",
+      "ref": "Formula C",
+      "type": "calc",
+      "front": "Treynor ratio",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">Treynor = (R<sub>p</sub> − R<sub>f</sub>) ÷ β<sub>p</sub></div>\n<p>Excess return per unit of <b>systematic (market) risk</b>.</p>\n<p class=\"ex\"><b>Example:</b> R<sub>p</sub> 10%, R<sub>f</sub> 3%, β 1.2 → 7% ÷ 1.2 = <b>5.83%</b></p>\n<ul>\n<li>Use it when the fund is one piece of a <b>well-diversified</b> portfolio, so unsystematic risk washes out and only beta matters.</li>\n<li>A fund can win on Treynor but lose on Sharpe if it carries a lot of unsystematic risk (high σ, low β).</li>\n</ul>"
+    },
+    {
+      "id": "formulas-4",
+      "group": "formulas",
+      "ref": "Formula D",
+      "type": "calc",
+      "front": "After-tax return on bonds (and tax-equivalent yield)",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">After-tax yield = taxable yield × (1 − t)<br>Tax-equivalent yield (TEY) = muni yield ÷ (1 − t)</div>\n<p>t = the investor's <b>marginal</b> tax rate (the rate on the next dollar).</p>\n<p class=\"ex\"><b>Example:</b> 32% bracket. Corporate 5.0% → 5.0 × 0.68 = <b>3.40%</b> after tax. Muni 3.5% → TEY 3.5 ÷ 0.68 = <b>5.15%</b>. The muni wins either way.</p>\n<ul>\n<li>Corporate: taxed federal + state. Treasury: federal only (state-exempt). In-state muni: usually exempt from both.</li>\n<li>With state tax, use a combined rate (simple version: federal + state).</li>\n<li>Break-even bracket = 1 − (muni ÷ taxable). 1 − 3.5/5.0 = 30%; above it, the muni wins.</li>\n</ul>"
+    },
+    {
+      "id": "formulas-5",
+      "group": "formulas",
+      "ref": "Formula E",
+      "type": "calc",
+      "front": "Dollar cost averaging (calculation)",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">Average cost per share = total dollars invested ÷ total shares bought</div>\n<p>Invest a fixed dollar amount at regular intervals regardless of price, so you buy more shares when prices are low.</p>\n<p class=\"ex\"><b>Example:</b> $300/month at $10, $15, $6 → 30 + 20 + 50 = 100 shares for $900. Average cost <b>$9.00</b> vs average price <b>$10.33</b>.</p>\n<ul>\n<li>Average cost is always ≤ the average price (it is a harmonic mean).</li>\n<li>Average price = simple average of the prices paid; don't confuse the two on the exam.</li>\n</ul>"
+    },
+    {
+      "id": "formulas-6",
+      "group": "formulas",
+      "ref": "Formula F",
+      "type": "calc",
+      "front": "Real return (inflation-adjusted)",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">Real return = (1 + nominal) ÷ (1 + inflation) − 1</div>\n<p>The growth in <b>purchasing power</b> after inflation (the Fisher relation).</p>\n<p class=\"ex\"><b>Example:</b> nominal 8%, inflation 3% → 1.08 ÷ 1.03 − 1 = <b>4.85%</b></p>\n<ul>\n<li>Shortcut nominal − inflation (5%) slightly overstates it; use the exact formula on the exam.</li>\n<li>A 2% return with 3% inflation is a <b>negative</b> real return (−0.97%).</li>\n</ul>"
+    },
+    {
+      "id": "behavior-7",
+      "group": "behavior",
+      "ref": "Define 1",
+      "type": "define",
+      "front": "Prospect theory",
+      "prompt": "Define it, give an example, and explain why it matters",
+      "back_html": "<p>Kahneman &amp; Tversky (1979): people judge outcomes as <b>gains or losses relative to a reference point</b>, not by final wealth.</p>\n<ul>\n<li><b>Loss aversion:</b> losses hurt about 2× as much as equal gains feel good.</li>\n<li><b>Diminishing sensitivity:</b> risk-averse with gains (take the sure $500), risk-seeking with losses (gamble to avoid a sure $500 loss). Value curve: concave for gains, convex and steeper for losses.</li>\n<li><b>Probability weighting:</b> overweight small probabilities (lotteries, insurance).</li>\n</ul>\n<p class=\"ex\"><b>Investing impact:</b> the <b>disposition effect</b>: selling winners too early and holding losers too long.</p>\n<p><b>Fix:</b> judge results at the whole-portfolio level; pre-set, rules-based selling.</p>"
+    },
+    {
+      "id": "behavior-8",
+      "group": "behavior",
+      "ref": "Define 2",
+      "type": "define",
+      "front": "Paradox of choice",
+      "prompt": "Define it, give an example, and explain why it matters",
+      "back_html": "<p>Barry Schwartz: <b>more options lead to decision paralysis</b>, worse choices, and less satisfaction with the choice made.</p>\n<p class=\"ex\"><b>Example:</b> 401(k) participation falls as the number of fund options rises; an employee faced with 40 funds never enrolls.</p>\n<p><b>Damage:</b> inaction, cash drag, naive diversification (spreading 1/n across whatever is listed).</p>\n<p><b>Fix:</b> curated short menus, good defaults (auto-enrollment, target-date funds), adviser narrows to 2–3 choices.</p>"
+    },
+    {
+      "id": "behavior-9",
+      "group": "behavior",
+      "ref": "Define 3",
+      "type": "define",
+      "front": "Cognitive dissonance",
+      "prompt": "Define it, give an example, and explain why it matters",
+      "back_html": "<p>The mental discomfort of holding <b>conflicting beliefs</b>, or of seeing evidence that a past decision was wrong. People ease it by ignoring or rationalizing the evidence.</p>\n<p class=\"ex\"><b>Example:</b> a stock you picked falls on bad news, and you decide \"the market just doesn't get it\" instead of re-examining the thesis.</p>\n<p><b>Damage:</b> holding losers, selective attention to information; feeds confirmation bias.</p>\n<p><b>Fix:</b> written investment thesis with sell triggers; outside review of positions.</p>"
+    },
+    {
+      "id": "behavior-10",
+      "group": "behavior",
+      "ref": "Define 4",
+      "type": "bias",
+      "front": "Conservatism bias",
+      "prompt": "Define it, give an example, the damage it does, and how to overcome it",
+      "back_html": "<p>Clinging to a prior view and <b>under-reacting to new information</b>; updating too slowly. <span class=\"tag\">Cognitive</span></p>\n<p class=\"ex\"><b>Example:</b> an analyst barely revises a forecast after a huge earnings miss.</p>\n<p><b>Damage:</b> slow reaction to real changes; holding stale positions.</p>\n<p><b>Fix:</b> deliberately weigh new data; ask \"what would change my mind?\" and act when it happens.</p>\n<p class=\"vs\"><b>Don't confuse:</b> confirmation bias <i>filters</i> information; conservatism <i>under-weights</i> it.</p>"
+    },
+    {
+      "id": "behavior-11",
+      "group": "behavior",
+      "ref": "Define 5",
+      "type": "bias",
+      "front": "Confirmation bias",
+      "prompt": "Define it, give an example, the damage it does, and how to overcome it",
+      "back_html": "<p>Seeking out and favoring information that <b>supports existing beliefs</b> while discounting contrary evidence. <span class=\"tag\">Cognitive</span></p>\n<p class=\"ex\"><b>Example:</b> reading only bullish forums about a favorite stock.</p>\n<p><b>Damage:</b> concentration, overconfidence, ignoring warning signs.</p>\n<p><b>Fix:</b> actively seek the bear case; assign a devil's advocate; use objective criteria.</p>\n<p class=\"vs\"><b>Don't confuse:</b> it is a cause of overconfidence, and differs from conservatism (which is slow updating).</p>"
+    },
+    {
+      "id": "behavior-12",
+      "group": "behavior",
+      "ref": "Define 6",
+      "type": "bias",
+      "front": "Representativeness bias",
+      "prompt": "Define it, give an example, the damage it does, and how to overcome it",
+      "back_html": "<p>Judging by <b>stereotype or resemblance</b> to a familiar pattern, ignoring base rates and sample size. <span class=\"tag\">Cognitive</span></p>\n<p class=\"ex\"><b>Examples:</b> \"great company = great stock\" (ignoring price); chasing last year's top fund; assuming a few good years prove skill.</p>\n<p><b>Damage:</b> overpaying for quality, performance chasing.</p>\n<p><b>Fix:</b> check base rates and valuation; demand long track records.</p>\n<p class=\"vs\"><b>Don't confuse:</b> recency overweights <i>what just happened</i>; representativeness matches <i>patterns or stereotypes</i>.</p>"
+    },
+    {
+      "id": "behavior-13",
+      "group": "behavior",
+      "ref": "Define 7",
+      "type": "bias",
+      "front": "Mental accounting",
+      "prompt": "Define it, give an example, the damage it does, and how to overcome it",
+      "back_html": "<p>Treating money differently depending on the <b>mental \"bucket\"</b> it sits in, instead of as one fungible pool. <span class=\"tag\">Cognitive</span></p>\n<p class=\"ex\"><b>Examples:</b> paying 22% on a credit card while holding a 1% \"vacation fund\"; gambling dividends or \"house money\" while being careful with salary.</p>\n<p><b>Damage:</b> ignores correlations and opportunity cost; inefficient overall portfolio.</p>\n<p><b>Fix:</b> look at total net worth and the total portfolio; goal-based buckets are fine if the whole is managed together.</p>"
+    },
+    {
+      "id": "behavior-14",
+      "group": "behavior",
+      "ref": "Define 8",
+      "type": "bias",
+      "front": "Anchoring",
+      "prompt": "Define it, give an example, the damage it does, and how to overcome it",
+      "back_html": "<p>Fixating on an <b>initial number</b> (purchase price, past high, first estimate) and adjusting too little from it. <span class=\"tag\">Cognitive</span></p>\n<p class=\"ex\"><b>Example:</b> refusing to sell until the stock \"gets back to what I paid.\"</p>\n<p><b>Damage:</b> holding losers, unrealistic price targets.</p>\n<p><b>Fix:</b> ask \"would I buy this today at today's price?\"; base decisions on current fundamentals.</p>\n<p class=\"vs\"><b>Don't confuse:</b> anchoring sticks to a <i>number</i>; framing reacts to how a choice is <i>worded</i>.</p>"
+    },
+    {
+      "id": "behavior-15",
+      "group": "behavior",
+      "ref": "Define 9",
+      "type": "bias",
+      "front": "Framing bias",
+      "prompt": "Define it, give an example, the damage it does, and how to overcome it",
+      "back_html": "<p>Making different decisions from the <b>same facts</b> depending on how they are presented (gain vs loss, % vs $). <span class=\"tag\">Cognitive</span></p>\n<p class=\"ex\"><b>Example:</b> preferring \"a 90% chance of beating cash\" over \"a 10% chance of losing to cash.\"</p>\n<p><b>Damage:</b> inconsistent risk choices; risk questionnaires give different answers depending on wording.</p>\n<p><b>Fix:</b> restate the choice several ways; focus on outcomes and probabilities, not the wording.</p>"
+    },
+    {
+      "id": "behavior-16",
+      "group": "behavior",
+      "ref": "Define 10",
+      "type": "bias",
+      "front": "Recency bias",
+      "prompt": "Define it, give an example, the damage it does, and how to overcome it",
+      "back_html": "<p>Overweighting <b>recent events</b> and extrapolating them forward, while discounting long-run history. <span class=\"tag\">Cognitive</span></p>\n<p class=\"ex\"><b>Example:</b> expecting 20% returns after two strong years; panic selling after a crash because \"it will keep falling.\"</p>\n<p><b>Damage:</b> buy high, sell low; performance chasing.</p>\n<p><b>Fix:</b> long-run return data; written rebalancing rules; an IPS that sets the allocation in advance.</p>"
+    },
+    {
+      "id": "behavior-17",
+      "group": "behavior",
+      "ref": "Define 11",
+      "type": "bias",
+      "front": "Loss-aversion bias",
+      "prompt": "Define it, give an example, the damage it does, and how to overcome it",
+      "back_html": "<p>Losses feel roughly <b>twice as painful</b> as equal gains feel good, so people work too hard to avoid losses. <span class=\"tag\">Emotional</span></p>\n<p class=\"ex\"><b>Examples:</b> holding losers to avoid \"realizing\" a loss; keeping too much in cash after a downturn.</p>\n<p><b>Damage:</b> disposition effect; portfolios too conservative to meet goals.</p>\n<p><b>Fix:</b> focus on total-return and goals; reframe losses as useful (tax-loss harvesting); fewer statement checks.</p>\n<p class=\"vs\"><b>Don't confuse:</b> regret aversion is about the <i>feeling of a wrong decision</i>, not the loss itself.</p>"
+    },
+    {
+      "id": "behavior-18",
+      "group": "behavior",
+      "ref": "Define 12",
+      "type": "bias",
+      "front": "Overconfidence bias",
+      "prompt": "Define it, give an example, the damage it does, and how to overcome it",
+      "back_html": "<p>Overestimating one's <b>knowledge, skill, or forecasting precision</b>. <span class=\"tag\">Emotional</span></p>\n<p class=\"ex\"><b>Example:</b> trading daily and holding five stocks because \"I know this sector.\"</p>\n<p><b>Damage:</b> excessive trading costs and taxes, under-diversification, underestimating risk.</p>\n<p><b>Fix:</b> keep a record of predictions vs outcomes; trading limits; a passive core with a small \"satellite\" for active ideas.</p>"
+    },
+    {
+      "id": "behavior-19",
+      "group": "behavior",
+      "ref": "Define 13",
+      "type": "bias",
+      "front": "Status quo bias",
+      "prompt": "Define it, give an example, the damage it does, and how to overcome it",
+      "back_html": "<p>Preferring to <b>leave things as they are</b>; inertia, even when a change would help. <span class=\"tag\">Emotional</span></p>\n<p class=\"ex\"><b>Example:</b> never changing a 401(k) allocation set at hire ten years ago.</p>\n<p><b>Damage:</b> the portfolio drifts away from the client's goals and risk level.</p>\n<p><b>Fix:</b> scheduled reviews; automatic rebalancing; defaults designed to be good (target-date funds).</p>\n<p class=\"vs\"><b>Don't confuse:</b> endowment is valuing something <i>because you own it</i>; status quo is general inertia.</p>"
+    },
+    {
+      "id": "behavior-20",
+      "group": "behavior",
+      "ref": "Define 14",
+      "type": "bias",
+      "front": "Endowment bias",
+      "prompt": "Define it, give an example, the damage it does, and how to overcome it",
+      "back_html": "<p>Valuing an asset <b>more simply because you own it</b>; you'd demand more to sell it than you'd pay to buy it. <span class=\"tag\">Emotional</span></p>\n<p class=\"ex\"><b>Example:</b> keeping inherited bank stock that is 40% of net worth \"because Dad picked it.\"</p>\n<p><b>Damage:</b> concentration risk; refusal to rebalance.</p>\n<p><b>Fix:</b> \"If you had this in cash, would you buy this stock?\"; sell gradually; keep a small sentimental position.</p>"
+    },
+    {
+      "id": "behavior-21",
+      "group": "behavior",
+      "ref": "Define 15",
+      "type": "bias",
+      "front": "Regret-aversion bias",
+      "prompt": "Define it, give an example, the damage it does, and how to overcome it",
+      "back_html": "<p>Avoiding decisions that might later cause <b>regret</b>, either by doing nothing or by following the crowd. <span class=\"tag\">Emotional</span></p>\n<p class=\"ex\"><b>Examples:</b> staying in cash after a crash (\"if I buy and it drops again I'll feel terrible\"); herding into popular stocks so you won't be alone if wrong.</p>\n<p><b>Damage:</b> missed returns, or herd risk at bubble prices.</p>\n<p><b>Fix:</b> decide rules in advance; diversify; dollar cost average into the market.</p>"
+    },
+    {
+      "id": "behavior-22",
+      "group": "behavior",
+      "ref": "Concept 1",
+      "type": "concept",
+      "front": "Differentiating behavioral biases and how to overcome them",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p><b>Cognitive</b> biases come from faulty reasoning or memory: conservatism, confirmation, representativeness, mental accounting, anchoring, framing, recency. <b>Moderate</b> them with education, data, and checklists.</p>\n<p><b>Emotional</b> biases come from feelings: loss aversion, overconfidence, status quo, endowment, regret aversion. Harder to correct, so advisers often <b>adapt</b> the portfolio to them within reason.</p>\n<p><b>Common look-alike pairs:</b></p>\n<ul>\n<li>Conservatism (slow updating) vs confirmation (filtering).</li>\n<li>Representativeness (stereotypes) vs recency (latest events).</li>\n<li>Status quo (inertia) vs endowment (ownership).</li>\n<li>Loss aversion (the loss) vs regret aversion (the wrong decision).</li>\n<li>Anchoring (a number) vs framing (the wording).</li>\n</ul>\n<p><b>General fixes:</b> a written IPS, automation (auto-invest, rebalancing), diversification, and an adviser as a behavioral coach.</p>"
+    },
+    {
+      "id": "basics-23",
+      "group": "basics",
+      "ref": "Banking 1",
+      "type": "define",
+      "front": "FDIC insurance",
+      "prompt": "Define it, give an example, and explain why it matters",
+      "back_html": "<p>Federal insurance on bank <b>deposits</b>: <b>$250,000 per depositor, per insured bank, per ownership category</b>. Created by the Banking Act of 1933; backed by the full faith and credit of the U.S.</p>\n<ul>\n<li><b>Covered:</b> checking, savings, money market <i>deposit</i> accounts, CDs, cashier's checks.</li>\n<li><b>Not covered:</b> stocks, bonds, mutual funds (including money market <i>mutual funds</i>), ETFs, annuities, insurance, crypto, safe-deposit box contents.</li>\n<li><b>Ownership categories</b> stack: single, joint ($250k per co-owner), retirement (IRAs), trust, business.</li>\n</ul>\n<p class=\"ex\"><b>Example:</b> couple at one bank: her single $250k + his single $250k + joint $500k = <b>$1M insured</b>.</p>\n<p class=\"vs\"><b>Contrast:</b> SIPC covers brokerage customers up to $500k ($250k cash) if the <i>firm fails</i>, not market losses. NCUA covers credit unions at $250k.</p>"
+    },
+    {
+      "id": "basics-24",
+      "group": "basics",
+      "ref": "Statements 1",
+      "type": "calc",
+      "front": "Net worth",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">Net worth = total assets − total liabilities</div>\n<p>A snapshot of wealth on one date, from the personal <b>balance sheet</b>. Assets are listed at fair market value.</p>\n<ul>\n<li>Assets: cash/liquid, invested (brokerage, retirement), use/personal (home, cars).</li>\n<li>Liabilities: current (credit cards, bills) and long-term (mortgage, auto, student loans).</li>\n</ul>\n<p class=\"ex\"><b>Example:</b> $650k assets − $410k liabilities = <b>$240k</b> net worth.</p>\n<p>Tracking it over time shows whether the household is building wealth.</p>"
+    },
+    {
+      "id": "basics-25",
+      "group": "basics",
+      "ref": "Statements 2",
+      "type": "define",
+      "front": "Cash flows (cash flow statement)",
+      "prompt": "Define it, give an example, and explain why it matters",
+      "back_html": "<div class=\"f\">Net cash flow (surplus or deficit) = cash inflows − cash outflows</div>\n<p>Income and spending <b>over a period</b> (month or year), unlike the balance sheet's single date.</p>\n<ul>\n<li>Inflows: salary, bonuses, interest, dividends, rent received.</li>\n<li>Outflows: fixed (mortgage, insurance, loan payments), variable (food, travel), taxes.</li>\n<li>A surplus funds saving and investing; a persistent deficit erodes net worth.</li>\n<li>Records actual cash: a car bought with a loan shows only the payments.</li>\n</ul>"
+    },
+    {
+      "id": "basics-26",
+      "group": "basics",
+      "ref": "Statements 3",
+      "type": "calc",
+      "front": "Savings ratio",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">Savings ratio = amount saved ÷ income</div>\n<p>The share of income the household saves. Textbooks use either <b>gross</b> or <b>after-tax</b> income as the denominator; state which you use.</p>\n<p class=\"ex\"><b>Example:</b> saves $1,200/month on $8,000 gross → <b>15%</b> (on $6,000 take-home → 20%).</p>\n<p>Common target: 10–15%+ of gross; Bernstein urges at least 15%. A low ratio signals the client can't fund long-term goals.</p>"
+    },
+    {
+      "id": "basics-27",
+      "group": "basics",
+      "ref": "Statements 4",
+      "type": "calc",
+      "front": "Debt-to-income ratio (DTI)",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">DTI = total monthly debt payments ÷ gross monthly income</div>\n<p>Measures debt burden and capacity to take on more; lenders use it to approve loans.</p>\n<p class=\"ex\"><b>Example:</b> mortgage $2,200 + car $450 + student loan $350 = $3,000 on $10,000 gross → <b>30%</b>.</p>\n<ul>\n<li>Front-end (housing only) guideline ≤ <b>28%</b>; back-end (all debt) ≤ <b>36%</b>; many mortgages allow up to 43%.</li>\n<li>Lower is better: more room to absorb shocks.</li>\n</ul>"
+    },
+    {
+      "id": "basics-28",
+      "group": "basics",
+      "ref": "Budgeting 1",
+      "type": "calc",
+      "front": "50/30/20 budget",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<p>Split <b>after-tax income</b>: <b>50% needs</b>, <b>30% wants</b>, <b>20% savings and extra debt payoff</b> (Elizabeth Warren, <i>All Your Worth</i>). The study guide calls it \"50-20-30.\"</p>\n<ul>\n<li><b>Needs:</b> housing, utilities, groceries, insurance, transportation, <i>minimum</i> debt payments.</li>\n<li><b>Wants:</b> dining out, travel, entertainment, subscriptions.</li>\n<li><b>Savings:</b> emergency fund, retirement, investing, payments above minimums.</li>\n</ul>\n<p class=\"ex\"><b>Example:</b> $6,000 take-home → needs $3,000, wants $1,800, savings $1,200.</p>\n<p>Applying it: if needs exceed 50%, cut housing/transport or trim wants. Limits: 50% is tight in high-cost areas; 20% may be too low for late starters.</p>"
+    },
+    {
+      "id": "ips-29",
+      "group": "ips",
+      "ref": "Define 1",
+      "type": "calc",
+      "front": "The 4% rule of retirement",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">Year-1 withdrawal = 4% × portfolio; then raise that dollar amount by inflation each year<br>Nest egg needed = annual spending from portfolio ÷ 0.04 = 25 × spending</div>\n<p>Bengen (1994) / Trinity Study: historically survived every 30-year U.S. period with ~50–75% stocks.</p>\n<p class=\"ex\"><b>Example:</b> needs $80k/year, Social Security covers $30k → $50k ÷ 0.04 = <b>$1.25M</b>. Year 2 at 3% inflation: $51,500.</p>\n<ul>\n<li><b>Why useful:</b> simple savings target, quick sustainability test, easy client conversation.</li>\n<li><b>Limits:</b> U.S. history only; 30-year horizon; ignores fees and taxes; rigid; vulnerable to <b>sequence-of-returns risk</b>.</li>\n</ul>"
+    },
+    {
+      "id": "ips-30",
+      "group": "ips",
+      "ref": "Concept 1",
+      "type": "concept",
+      "front": "Ability vs willingness to take risk",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p><b>Ability</b> (capacity) is <b>objective and financial</b>: time horizon, wealth relative to needs, income stability, liquidity needs, flexibility of spending.</p>\n<p><b>Willingness</b> (tolerance) is <b>subjective and psychological</b>: attitudes, questionnaire answers, past behavior in downturns.</p>\n<p><b>When they conflict, use the lower one.</b> If willingness exceeds ability, ability is a hard limit. If ability exceeds willingness, educate, but respect the lower willingness; a client who panics and sells does more damage.</p>\n<p class=\"ex\"><b>Example:</b> young surgeon, secure income, 35-year horizon (high ability) who lost sleep in the last drop (low willingness) → average-to-below-average overall.</p>\n<p>State the overall verdict as below-average, average, or above-average risk tolerance.</p>"
+    },
+    {
+      "id": "ips-31",
+      "group": "ips",
+      "ref": "Concept 2",
+      "type": "concept",
+      "front": "Relationship between risk and return",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p>Higher expected return requires accepting higher risk. Investors are paid only for <b>systematic</b> risk, because unsystematic risk can be diversified away for free.</p>\n<div class=\"f\">CAPM: E(R<sub>i</sub>) = R<sub>f</sub> + β<sub>i</sub> [E(R<sub>m</sub>) − R<sub>f</sub>]</div>\n<p class=\"ex\"><b>Example:</b> R<sub>f</sub> 3%, market 9%, β 1.2 → 3 + 1.2 × 6 = <b>10.2%</b></p>\n<ul>\n<li>Ladder: cash &lt; short bonds &lt; long bonds &lt; large-cap stocks &lt; small-cap / emerging-market stocks.</li>\n<li>The extra return over R<sub>f</sub> is the <b>risk premium</b>.</li>\n</ul>"
+    },
+    {
+      "id": "ips-32",
+      "group": "ips",
+      "ref": "Concept 3",
+      "type": "concept",
+      "front": "Recommending an equity investment approach from an IPS",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p>Match the client's IPS to approach and vehicle:</p>\n<ul>\n<li><b>Fee-sensitive, believes markets efficient, OK with market returns</b> → passive (index funds/ETFs).</li>\n<li><b>Taxable, high bracket</b> → ETFs/index funds; an SMA with tax-loss harvesting for larger accounts.</li>\n<li><b>Wants a little outperformance with tight tracking</b> → enhanced index (semi-active).</li>\n<li><b>Return target above market, tolerates tracking error</b> → active, or core-satellite.</li>\n<li><b>Large account, wants customization / ESG / legacy positions</b> → separately managed account.</li>\n<li><b>Short horizon or high liquidity needs</b> → less equity; large-cap, liquid holdings.</li>\n<li><b>Long horizon, high ability and willingness</b> → more equity, including small-cap and international.</li>\n</ul>\n<p>Justify each recommendation by citing the specific IPS line it answers.</p>"
+    },
+    {
+      "id": "ips-33",
+      "group": "ips",
+      "ref": "Concept 4",
+      "type": "calc",
+      "front": "Expected return of a portfolio",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">E(R<sub>p</sub>) = Σ w<sub>i</sub> × E(R<sub>i</sub>)</div>\n<p>A weighted average of the assets' expected returns.</p>\n<p class=\"ex\"><b>Example:</b> 60% stocks at 9%, 30% bonds at 4%, 10% cash at 2% → 5.4 + 1.2 + 0.2 = <b>6.8%</b></p>\n<p>With scenarios, first find each asset's E(R) = Σ probability × return. Boom 30% × 20%, normal 50% × 8%, bust 20% × −10% → 6 + 4 − 2 = <b>8%</b>.</p>\n<p>Risk is <b>not</b> a weighted average (unless ρ = +1): σ<sub>p</sub>² = w₁²σ₁² + w₂²σ₂² + 2w₁w₂ρσ₁σ₂.</p>"
+    },
+    {
+      "id": "ips-34",
+      "group": "ips",
+      "ref": "Concept 5",
+      "type": "concept",
+      "front": "Constructing or evaluating an IPS",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p>The IPS sets <b>objectives</b> (return, risk) and <b>constraints</b> (time horizon, taxes, liquidity, legal, unique circumstances). Memory aid: <b>RR TTLLU</b>.</p>\n<ul>\n<li>It guides asset allocation, manager selection, rebalancing, and reviews.</li>\n<li><b>Evaluating:</b> look for mismatches: a 9% return target with below-average risk tolerance; aggressive equity with a big near-term liquidity need; no tax discussion for a high-bracket client.</li>\n<li><b>Constructing:</b> state the required return, the overall risk verdict, then each constraint in a sentence, then the resulting allocation.</li>\n</ul>"
+    },
+    {
+      "id": "ips-35",
+      "group": "ips",
+      "ref": "Concept 5a",
+      "type": "calc",
+      "front": "IPS: return objective",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<p>The return the portfolio must (required) and would like to (desired) earn. State nominal vs real and net of fees.</p>\n<div class=\"f\">Required return ≈ spending ÷ investable assets + inflation + fees</div>\n<p class=\"ex\"><b>Example:</b> $2M portfolio, $90k spending, 2.5% inflation → 4.5% + 2.5% = <b>7.0%</b> (exact: 1.045 × 1.025 − 1 = 7.11%).</p>\n<p>Then test it against risk tolerance. If the required return needs more risk than the client can bear, the client must spend less, save more, or work longer.</p>"
+    },
+    {
+      "id": "ips-36",
+      "group": "ips",
+      "ref": "Concept 5b",
+      "type": "concept",
+      "front": "IPS: risk tolerance",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p>Combine <b>ability</b> (financial capacity) and <b>willingness</b> (psychology) into one verdict: below-average, average, or above-average. When they conflict, use the lower one.</p>\n<ul>\n<li>Raises ability: long horizon, large assets relative to spending, stable income, few near-term needs, insurance in place.</li>\n<li>Lowers ability: retirement soon, high withdrawal rate, concentrated assets, dependents, unstable income.</li>\n<li>Willingness clues: questionnaire answers, words like \"can't afford to lose,\" behavior in past crashes.</li>\n</ul>\n<p class=\"ex\"><b>Example language:</b> \"Above-average ability, below-average willingness → average overall risk tolerance.\"</p>"
+    },
+    {
+      "id": "ips-37",
+      "group": "ips",
+      "ref": "Concept 5c-1",
+      "type": "concept",
+      "front": "IPS constraint: liquidity",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p>Cash the client needs from the portfolio on short notice or for known near-term expenses.</p>\n<ul>\n<li>Ongoing spending needs (e.g., 1–2 years of withdrawals for a retiree).</li>\n<li>Emergency reserve (3–6 months of expenses).</li>\n<li>Planned outflows: home down payment, tuition, a new roof.</li>\n</ul>\n<p class=\"ex\"><b>Example language:</b> \"$40k home down payment in 18 months plus a 6-month reserve; hold in cash or short-term bonds.\"</p>\n<p>High liquidity needs reduce ability to take risk and favor liquid, large-cap holdings over illiquid assets.</p>"
+    },
+    {
+      "id": "ips-38",
+      "group": "ips",
+      "ref": "Concept 5c-2",
+      "type": "concept",
+      "front": "IPS constraint: time horizon",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p>How long until the money is needed. It can be <b>single-stage</b> or <b>multi-stage</b>.</p>\n<ul>\n<li>Longer horizon → more ability to take risk (time to recover from losses).</li>\n<li>Multi-stage example: \"12 years to retirement, then ~30 years in retirement.\"</li>\n<li>Stage changes (retirement, college start) trigger an IPS review.</li>\n</ul>\n<p class=\"ex\"><b>Example:</b> a 35-year-old saving for retirement has a long horizon; the same person saving for a house in 2 years has a short one for that goal.</p>"
+    },
+    {
+      "id": "taxes-39",
+      "group": "taxes",
+      "ref": "Define 1",
+      "type": "define",
+      "front": "Long-term capital gain",
+      "prompt": "Define it, give an example, and explain why it matters",
+      "back_html": "<p>A gain on an asset held <b>more than one year</b>.</p>\n<ul>\n<li>Taxed at preferential rates (0%, 15%, 20%), plus the 3.8% net investment income tax for high earners.</li>\n<li>Waiting past one year can cut the tax sharply.</li>\n</ul>\n<p class=\"ex\"><b>Example:</b> $2,980 gain held 13 months at 15% → <b>$447</b> tax (vs $953.60 at a 32% short-term rate).</p>"
+    },
+    {
+      "id": "taxes-40",
+      "group": "taxes",
+      "ref": "Define 2",
+      "type": "define",
+      "front": "Short-term capital gain",
+      "prompt": "Define it, give an example, and explain why it matters",
+      "back_html": "<p>A gain on an asset held <b>one year or less</b>. Taxed at <b>ordinary income</b> rates.</p>\n<p class=\"ex\"><b>Example:</b> $2,980 gain held 6 months at a 32% bracket → <b>$953.60</b>.</p>\n<p>High-turnover trading and active mutual funds generate more short-term gains, which is one reason they are tax-inefficient.</p>"
+    },
+    {
+      "id": "taxes-41",
+      "group": "taxes",
+      "ref": "Define 3",
+      "type": "define",
+      "front": "Tax deduction",
+      "prompt": "Define it, give an example, and explain why it matters",
+      "back_html": "<p>Reduces <b>taxable income</b>. It saves tax equal to the deduction × your marginal rate.</p>\n<p class=\"ex\"><b>Example:</b> a $1,000 deduction in the 24% bracket saves <b>$240</b>.</p>\n<ul>\n<li>Above-the-line (adjustments: traditional IRA, HSA, student loan interest) reduce AGI.</li>\n<li>Below-the-line: the standard deduction <i>or</i> itemized deductions (mortgage interest, state/local taxes, charity), whichever is larger.</li>\n<li>Worth more to higher-bracket taxpayers.</li>\n</ul>"
+    },
+    {
+      "id": "taxes-42",
+      "group": "taxes",
+      "ref": "Define 4",
+      "type": "define",
+      "front": "Tax credit",
+      "prompt": "Define it, give an example, and explain why it matters",
+      "back_html": "<p>Reduces <b>tax owed</b> dollar for dollar.</p>\n<p class=\"ex\"><b>Example:</b> a $1,000 credit saves <b>$1,000</b>, regardless of bracket.</p>\n<ul>\n<li><b>Refundable</b> credits can produce a refund below zero tax; <b>nonrefundable</b> credits stop at zero.</li>\n<li>A $500 credit beats a $2,000 deduction for anyone below a 25% bracket (2,000 × 0.24 = $480).</li>\n</ul>"
+    },
+    {
+      "id": "taxes-43",
+      "group": "taxes",
+      "ref": "Define 5",
+      "type": "define",
+      "front": "Dividend",
+      "prompt": "Define it, give an example, and explain why it matters",
+      "back_html": "<p>A distribution of a corporation's <b>after-tax profits</b> to its shareholders (owners).</p>\n<ul>\n<li><b>Qualified:</b> taxed at long-term capital gain rates. Requires a U.S. or qualified foreign corporation and holding the stock <b>more than 60 days</b> in the 121-day window around the ex-dividend date.</li>\n<li><b>Ordinary (non-qualified):</b> taxed at ordinary rates (REITs, money market funds, short holdings).</li>\n<li>Not guaranteed; the board can cut it.</li>\n<li>\"Double taxation\": profits are taxed at the corporate level, then again to the shareholder.</li>\n</ul>"
+    },
+    {
+      "id": "taxes-44",
+      "group": "taxes",
+      "ref": "Define 6",
+      "type": "define",
+      "front": "Interest",
+      "prompt": "Define it, give an example, and explain why it matters",
+      "back_html": "<p>Payment to a <b>lender</b> for the use of money: bonds, CDs, savings accounts.</p>\n<ul>\n<li>Taxed as <b>ordinary income</b>.</li>\n<li>Exceptions: municipal bond interest is federal-tax-exempt (often state too if in-state); Treasury interest is state-tax-exempt.</li>\n<li>A legal obligation of the borrower, unlike dividends.</li>\n<li>Deductible for the paying corporation, so it is taxed only once.</li>\n</ul>"
+    },
+    {
+      "id": "taxes-45",
+      "group": "taxes",
+      "ref": "Define 7",
+      "type": "define",
+      "front": "Harvesting capital losses and gains",
+      "prompt": "Define it, give an example, and explain why it matters",
+      "back_html": "<p><b>Tax-loss harvesting:</b> sell investments with losses to realize them and offset realized gains (and up to $3,000 of ordinary income per year). Reinvest in something similar so market exposure stays.</p>\n<p><b>Wash-sale rule:</b> buying a \"substantially identical\" security within <b>30 days before or after</b> the sale disallows the loss (it's added to the new basis). Swap, e.g., one S&amp;P 500 fund for a total-market fund.</p>\n<p><b>Tax-gain harvesting:</b> in years you fall in the <b>0% LTCG bracket</b>, sell winners and rebuy to reset basis higher at no tax cost (no wash-sale rule for gains).</p>"
+    },
+    {
+      "id": "taxes-46",
+      "group": "taxes",
+      "ref": "Define 8",
+      "type": "define",
+      "front": "How to minimize taxable gains",
+      "prompt": "Define it, give an example, and explain why it matters",
+      "back_html": "<ul>\n<li>Hold more than one year for long-term rates.</li>\n<li>Harvest losses; avoid wash sales.</li>\n<li><b>Specific lot identification:</b> sell highest-basis lots first (instead of FIFO).</li>\n<li><b>Asset location:</b> bonds, REITs, high-turnover funds in tax-deferred accounts; index funds/ETFs in taxable; highest growth in Roth.</li>\n<li>Use tax-efficient vehicles: index funds, ETFs (in-kind redemptions).</li>\n<li>Don't buy a mutual fund just before its capital gain distribution.</li>\n<li>Donate appreciated shares to charity; hold to death for a <b>step-up in basis</b>.</li>\n<li>Harvest gains in 0% years; use munis in high brackets; max out 401(k)/IRA/HSA.</li>\n</ul>"
+    },
+    {
+      "id": "taxes-47",
+      "group": "taxes",
+      "ref": "Concept 1",
+      "type": "calc",
+      "front": "Calculating taxes on investments and property",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">Gain = amount realized (sale price − selling costs) − adjusted basis</div>\n<p>Basis = cost + commissions. For property, adjusted basis = cost + improvements − depreciation.</p>\n<p class=\"ex\"><b>Stock:</b> buy 100 sh at $50 + $10 commission (basis $5,010); sell at $80 − $10 ($7,990). Gain <b>$2,980</b>; long-term at 15% = $447.</p>\n<p class=\"ex\"><b>Home:</b> buy $400k + $50k improvements; sell $800k − $40k costs → gain $310k. Primary residence exclusion ($250k single / $500k joint, lived there 2 of last 5 years) → <b>$0</b> recognized for a couple.</p>\n<p><b>Rental:</b> depreciation taken is recaptured (up to 25%). Inherited assets get a <b>step-up</b> in basis; gifts keep the giver's <b>carryover</b> basis.</p>"
+    },
+    {
+      "id": "taxes-48",
+      "group": "taxes",
+      "ref": "Concept 2",
+      "type": "concept",
+      "front": "Capital gain vs capital loss (netting rules)",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p>Gain = sold for more than adjusted basis; loss = sold for less.</p>\n<ol>\n<li>Net short-term gains vs short-term losses.</li>\n<li>Net long-term gains vs long-term losses.</li>\n<li>Net the two results against each other.</li>\n<li>A net loss offsets up to <b>$3,000</b> of ordinary income per year ($1,500 married filing separately).</li>\n<li>The rest <b>carries forward indefinitely</b>, keeping its character.</li>\n</ol>\n<p class=\"ex\"><b>Example:</b> ST +8k −3k = +5k; LT +2k −12k = −10k → net −5k: deduct 3k, carry forward 2k (long-term).</p>\n<p>Losses on personal-use property (your car, your home) are not deductible.</p>"
+    },
+    {
+      "id": "taxes-49",
+      "group": "taxes",
+      "ref": "Concept 3",
+      "type": "concept",
+      "front": "Realized vs recognized income",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<ul>\n<li><b>Unrealized</b> (paper) gain: the asset rose but hasn't been sold. Not taxed.</li>\n<li><b>Realized</b> gain: a sale or exchange occurred. Realized gain = amount realized − adjusted basis.</li>\n<li><b>Recognized</b> gain: the part of the realized gain reported as taxable this year.</li>\n</ul>\n<p><b>Realized but not recognized:</b> home-sale exclusion, 1031 like-kind real estate exchange (deferred), trades inside an IRA/401(k), gifts of stock to charity.</p>\n<p class=\"ex\"><b>Example:</b> $310k realized gain on a home; $500k exclusion → $0 recognized.</p>"
+    },
+    {
+      "id": "taxes-50",
+      "group": "taxes",
+      "ref": "Concept 4",
+      "type": "concept",
+      "front": "Earned vs unearned income",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p><b>Earned:</b> wages, salary, tips, bonuses, self-employment income. Subject to income tax <b>and</b> payroll tax (FICA 7.65%; self-employment 15.3%). Required to contribute to an IRA.</p>\n<p><b>Unearned:</b> interest, dividends, capital gains, rents, royalties, pensions, Social Security. No payroll tax; may face the 3.8% net investment income tax (above $200k single / $250k joint).</p>\n<p><b>Kiddie tax:</b> a child's unearned income above a threshold is taxed at the parents' rate.</p>"
+    },
+    {
+      "id": "taxes-51",
+      "group": "taxes",
+      "ref": "Concept 5",
+      "type": "concept",
+      "front": "How dividends are taxed, and how they differ from interest",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<ul>\n<li><b>Interest</b> = return to a <i>lender</i>; deductible for the payer; taxed to you at <b>ordinary rates</b>.</li>\n<li><b>Dividend</b> = share of profits to an <i>owner</i>; paid from after-tax corporate income (double taxed); <b>qualified</b> dividends get LTCG rates (0/15/20%), ordinary dividends get ordinary rates.</li>\n<li>Interest is a contractual obligation; dividends are discretionary.</li>\n<li>Bondholders are paid before shareholders in bankruptcy.</li>\n</ul>\n<p class=\"ex\"><b>Example:</b> $1,000 of qualified dividends at 15% → $150 tax; $1,000 of bond interest at a 32% bracket → $320.</p>"
+    },
+    {
+      "id": "taxes-52",
+      "group": "taxes",
+      "ref": "Concept 6",
+      "type": "calc",
+      "front": "After-tax yield and tax-equivalent yield (why relevant)",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">After-tax yield = r × (1 − t) &nbsp;·&nbsp; TEY = muni ÷ (1 − t)</div>\n<p>Lets you compare taxable and tax-exempt bonds on what the investor <b>actually keeps</b>.</p>\n<p class=\"ex\"><b>Example:</b> 35% federal + 5% state ≈ 40%. Corporate 6% → 3.60%. Treasury 5% → 5 × 0.65 = 3.25%. In-state muni 4% → 4.00% (best); TEY = 4 ÷ 0.60 = 6.67%.</p>\n<p>Munis make sense mainly for high-bracket investors. Break-even bracket = 1 − (muni ÷ taxable).</p>"
+    },
+    {
+      "id": "taxes-53",
+      "group": "taxes",
+      "ref": "Concept 7",
+      "type": "calc",
+      "front": "Income tax flow, brackets, marginal vs effective rate (Piper)",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">Gross income − adjustments = AGI<br>AGI − (standard or itemized deduction) = taxable income<br>Tax − credits − withholding = refund or balance due</div>\n<ul>\n<li><b>Progressive brackets:</b> each rate applies only to income inside that bracket; a raise never lowers take-home pay.</li>\n<li><b>Marginal rate</b> = rate on the next dollar (use for decisions). <b>Effective rate</b> = total tax ÷ income.</li>\n</ul>\n<p class=\"ex\"><b>Example (made-up brackets):</b> 10% to $20k, 12% to $80k, 22% above. Taxable $100k → 2,000 + 7,200 + 4,400 = <b>$13,600</b>; marginal 22%, effective 13.6%.</p>"
+    },
+    {
+      "id": "measures-54",
+      "group": "measures",
+      "ref": "Define 1",
+      "type": "calc",
+      "front": "Cap-weighted (value-weighted) index",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">Weight<sub>i</sub> = price × shares outstanding (often float-adjusted) ÷ total market cap</div>\n<p>Bigger companies carry more weight. Examples: S&amp;P 500, Nasdaq Composite, Russell indexes.</p>\n<p class=\"ex\"><b>Example:</b> A $100→$110 (1M sh), B $50→$45 (4M), C $30→$36 (10M). Total cap $600M → $650M = <b>+8.33%</b>.</p>\n<ul>\n<li>Pros: reflects the market; <b>self-rebalancing</b>; low turnover; cheap to track.</li>\n<li>Cons: overweights the largest (possibly overvalued) stocks; momentum and concentration risk.</li>\n</ul>"
+    },
+    {
+      "id": "measures-55",
+      "group": "measures",
+      "ref": "Define 2",
+      "type": "calc",
+      "front": "Price-weighted index",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">Index = sum of share prices ÷ divisor</div>\n<p>Higher-<b>priced</b> stocks dominate, regardless of company size. Examples: Dow Jones Industrial Average, Nikkei 225.</p>\n<p class=\"ex\"><b>Example:</b> prices 100, 50, 30 → 60. After: 110, 45, 36 → 63.67 = <b>+6.11%</b>. A 10% move in the $100 stock moves it 5.6%; in the $30 stock, only 1.7%.</p>\n<ul>\n<li>A stock split forces a divisor adjustment.</li>\n<li>Weights are arbitrary, since share price says nothing about value.</li>\n</ul>"
+    },
+    {
+      "id": "measures-56",
+      "group": "measures",
+      "ref": "Define 3",
+      "type": "calc",
+      "front": "Equally weighted index",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<p>Every stock gets the <b>same weight</b>; index return = simple average of the stock returns. Example: S&amp;P 500 Equal Weight.</p>\n<p class=\"ex\"><b>Example:</b> returns +10%, −10%, +20% → <b>+6.67%</b>.</p>\n<ul>\n<li>Pros: diversified by name; tilts toward smaller (and often value) stocks.</li>\n<li>Cons: must <b>rebalance</b> often (turnover, costs, taxes); gives small, illiquid stocks big weights.</li>\n</ul>"
+    },
+    {
+      "id": "measures-57",
+      "group": "measures",
+      "ref": "Define 4",
+      "type": "calc",
+      "front": "Holding period return (HPR)",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">HPR = (P<sub>1</sub> − P<sub>0</sub> + D) ÷ P<sub>0</sub></div>\n<p>Total return (price change + income) over the whole time you held the investment, any length.</p>\n<p class=\"ex\"><b>Example:</b> buy $40, $1 dividend, sell $46 → (6 + 1) ÷ 40 = <b>17.5%</b></p>\n<p>Annualize a multi-year HPR: (1 + HPR)<sup>1/years</sup> − 1. A 3-year HPR of 33.1% = 10%/year.</p>"
+    },
+    {
+      "id": "measures-58",
+      "group": "measures",
+      "ref": "Define 5",
+      "type": "calc",
+      "front": "Geometric average return",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">G = [(1 + r<sub>1</sub>)(1 + r<sub>2</sub>)…(1 + r<sub>n</sub>)]<sup>1/n</sup> − 1</div>\n<p>The compound annual growth rate actually earned.</p>\n<p class=\"ex\"><b>Example:</b> +50% then −50%: arithmetic = 0%, geometric = (1.5 × 0.5)<sup>½</sup> − 1 = <b>−13.4%</b>. $100 really became $75.</p>\n<ul>\n<li>Geometric ≤ arithmetic; the gap grows with volatility (G ≈ A − σ²/2).</li>\n<li>Use geometric for past compound performance; arithmetic for a single future year's expected return.</li>\n</ul>"
+    },
+    {
+      "id": "measures-59",
+      "group": "measures",
+      "ref": "Define 6 & 10",
+      "type": "calc",
+      "front": "IRR (internal rate of return)",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">Σ CF<sub>t</sub> ÷ (1 + IRR)<sup>t</sup> = 0</div>\n<p>The discount rate that makes the present value of all cash flows (outflows negative, inflows positive) equal zero. In portfolio measurement, IRR <b>is</b> the money-weighted return.</p>\n<p><b>Without Excel:</b> two periods → set x = 1/(1 + r) and solve the quadratic. Otherwise, guess rates (10%, 12%, 14%) until NPV ≈ 0, or use a financial calculator's CF/IRR keys.</p>\n<p class=\"ex\"><b>Example:</b> −100 now, −120 at t1, +260 at t2 → 260x² − 120x − 100 = 0 → x = 0.8925 → IRR = <b>12.05%</b>.</p>\n<p>The study guide lists IRR twice; it's one concept.</p>"
+    },
+    {
+      "id": "measures-60",
+      "group": "measures",
+      "ref": "Define 7",
+      "type": "concept",
+      "front": "Dollar-weighted (money-weighted) return",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p>The IRR of the investor's actual cash flows. It reflects the <b>investor's experience</b>, including the timing and size of deposits and withdrawals.</p>\n<p class=\"ex\"><b>Example:</b> buy 1 share at $100; at $120 buy another; sell both at $130 ($260). MWR = <b>12.05%</b> vs TWR 14.02%: more money was in for the weaker second year.</p>\n<ul>\n<li>Use when the manager controls cash flows (private equity) or to show a client's real result.</li>\n<li>Unfair for judging a manager who doesn't control flows.</li>\n</ul>"
+    },
+    {
+      "id": "measures-61",
+      "group": "measures",
+      "ref": "Define 8",
+      "type": "calc",
+      "front": "Time-weighted return",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">TWR = [(1 + r<sub>1</sub>)(1 + r<sub>2</sub>)…(1 + r<sub>n</sub>)]<sup>1/n</sup> − 1, breaking periods at each cash flow</div>\n<p>Removes the effect of external contributions and withdrawals, so it measures the <b>manager's</b> skill. Required by GIPS; the industry standard.</p>\n<p class=\"ex\"><b>Example:</b> year 1: 100 → 120 = 20%; year 2: 120 → 130 = 8.33%. TWR = (1.20 × 1.0833)<sup>½</sup> − 1 = <b>14.02%</b>.</p>"
+    },
+    {
+      "id": "measures-62",
+      "group": "measures",
+      "ref": "Define 9",
+      "type": "calc",
+      "front": "Real rate of return (inflation-adjusted)",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">Real = (1 + nominal) ÷ (1 + inflation) − 1</div>\n<p>Return in terms of purchasing power. Retirement and IPS goals should be judged in real terms.</p>\n<p class=\"ex\"><b>Example:</b> geometric return 5.05% with 3% inflation → 1.0505 ÷ 1.03 − 1 = <b>1.99%</b> real.</p>\n<p>Nominal returns can look healthy while real returns are near zero (e.g., the 1970s). Bernstein calls inflation the most likely \"deep risk.\"</p>"
+    },
+    {
+      "id": "measures-63",
+      "group": "measures",
+      "ref": "Define 11",
+      "type": "calc",
+      "front": "Expected rate of return",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">E(R) = Σ p<sub>s</sub> × R<sub>s</sub> &nbsp;·&nbsp; or CAPM: R<sub>f</sub> + β(R<sub>m</sub> − R<sub>f</sub>)</div>\n<p>The probability-weighted average of possible outcomes; a forward-looking estimate, not a promise.</p>\n<p class=\"ex\"><b>Example:</b> 30% × 20% + 50% × 8% + 20% × (−10%) = 6 + 4 − 2 = <b>8%</b>.</p>\n<p>For a portfolio: weighted average of the holdings' expected returns.</p>"
+    },
+    {
+      "id": "measures-64",
+      "group": "measures",
+      "ref": "Define 12",
+      "type": "define",
+      "front": "Systematic risk",
+      "prompt": "Define it, give an example, and explain why it matters",
+      "back_html": "<p>Market-wide risk that affects nearly all securities: interest rates, inflation, recessions, war, policy shocks. Also called market or <b>non-diversifiable</b> risk.</p>\n<ul>\n<li>Measured by <b>beta</b>.</li>\n<li><b>Rewarded</b> with higher expected return (CAPM), because it can't be diversified away.</li>\n<li>Can be reduced only by holding less equity (or hedging), not by adding more stocks.</li>\n</ul>"
+    },
+    {
+      "id": "measures-65",
+      "group": "measures",
+      "ref": "Define 13",
+      "type": "define",
+      "front": "Unsystematic risk",
+      "prompt": "Define it, give an example, and explain why it matters",
+      "back_html": "<p>Company- or industry-specific risk: lawsuits, a CEO departure, product recall, fraud, a failed drug trial. Also called specific, idiosyncratic, or <b>diversifiable</b> risk.</p>\n<ul>\n<li>Largely eliminated with ~20–30 stocks across industries.</li>\n<li><b>Not rewarded</b>: investors can remove it for free.</li>\n<li>Total risk (variance) = systematic + unsystematic. The unsystematic share ≈ 1 − R².</li>\n</ul>"
+    },
+    {
+      "id": "measures-66",
+      "group": "measures",
+      "ref": "Define 14",
+      "type": "calc",
+      "front": "Standard deviation",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">σ = √[ Σ (R<sub>t</sub> − R̄)² ÷ (n − 1) ] (sample) &nbsp;·&nbsp; σ = √[ Σ p<sub>s</sub>(R<sub>s</sub> − E[R])² ] (scenarios)</div>\n<p>How widely returns spread around their mean: a measure of <b>total risk</b>. If returns are normal, ~68% fall within ±1σ, ~95% within ±2σ.</p>\n<p class=\"ex\"><b>Example:</b> 10%, −5%, 15% → mean 6.67%; squared deviations 11.11 + 136.11 + 69.44 = 216.67; ÷ 2 = 108.33 → σ = <b>10.41%</b> (population ÷3: 8.50%).</p>"
+    },
+    {
+      "id": "measures-67",
+      "group": "measures",
+      "ref": "Define 15",
+      "type": "calc",
+      "front": "Covariance",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">Cov(A,B) = Σ p<sub>s</sub> (R<sub>A,s</sub> − E[R<sub>A</sub>]) (R<sub>B,s</sub> − E[R<sub>B</sub>])</div>\n<p>Measures whether two assets' returns move <b>together</b>.</p>\n<ul>\n<li>Positive: tend to move the same way. Negative: opposite ways. Near zero: unrelated.</li>\n<li>Its size is hard to interpret (unbounded, depends on units), so we standardize it into correlation.</li>\n<li>Drives the cross term in portfolio variance: 2w₁w₂Cov₁₂.</li>\n</ul>"
+    },
+    {
+      "id": "measures-68",
+      "group": "measures",
+      "ref": "Define 16",
+      "type": "calc",
+      "front": "Correlation coefficient",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">ρ<sub>AB</sub> = Cov(A,B) ÷ (σ<sub>A</sub> × σ<sub>B</sub>)</div>\n<p>Standardized covariance, from <b>−1 to +1</b>.</p>\n<ul>\n<li>+1: no diversification benefit. 0: unrelated. −1: perfect hedge.</li>\n<li>Any ρ &lt; 1 makes portfolio risk lower than the weighted average of the risks.</li>\n</ul>\n<p class=\"ex\"><b>Example:</b> Cov 0.0096, σ<sub>A</sub> 20%, σ<sub>B</sub> 12% → 0.0096 ÷ 0.024 = <b>0.40</b>.</p>\n<p>Correlations tend to rise in crises, when diversification is most needed.</p>"
+    },
+    {
+      "id": "measures-69",
+      "group": "measures",
+      "ref": "Define 17",
+      "type": "calc",
+      "front": "Beta",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">β<sub>i</sub> = Cov(R<sub>i</sub>, R<sub>m</sub>) ÷ σ<sub>m</sub>² = ρ<sub>i,m</sub> × σ<sub>i</sub> ÷ σ<sub>m</sub></div>\n<p>Sensitivity to market moves; the measure of <b>systematic risk</b>.</p>\n<p class=\"ex\"><b>Example:</b> ρ 0.8, σ<sub>i</sub> 25%, σ<sub>m</sub> 16% → 0.8 × 25/16 = <b>1.25</b>. Moves ~1.25% per 1% market move.</p>\n<ul>\n<li>Market β = 1; T-bills β = 0; β &lt; 1 defensive; β &gt; 1 aggressive.</li>\n<li>Portfolio beta = weighted average of the holdings' betas.</li>\n</ul>"
+    },
+    {
+      "id": "measures-70",
+      "group": "measures",
+      "ref": "Define 18",
+      "type": "define",
+      "front": "R-squared",
+      "prompt": "Define it, give an example, and explain why it matters",
+      "back_html": "<p>R² = ρ² with the benchmark: the share of a fund's return variation <b>explained by the benchmark</b>.</p>\n<p class=\"ex\"><b>Example:</b> ρ = 0.8 → R² = <b>0.64</b> (64% explained by the market).</p>\n<ul>\n<li><b>High R²</b> (≳ 0.85): beta and alpha are meaningful. Very high R² plus high fees can flag a <b>closet indexer</b>.</li>\n<li><b>Low R²</b>: wrong benchmark or a very different strategy; beta and alpha are unreliable.</li>\n<li>A falling R² vs the stated benchmark can reveal <b>style drift</b>.</li>\n</ul>"
+    },
+    {
+      "id": "measures-71",
+      "group": "measures",
+      "ref": "Define 19",
+      "type": "calc",
+      "front": "Information ratio",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">IR = (R<sub>p</sub> − R<sub>b</sub>) ÷ tracking error, where tracking error = σ(R<sub>p</sub> − R<sub>b</sub>)</div>\n<p>Active return per unit of <b>active risk</b>: the best gauge of an active manager's skill and consistency vs the benchmark.</p>\n<p class=\"ex\"><b>Example:</b> fund 11%, benchmark 9.5%, tracking error 3% → 1.5 ÷ 3 = <b>0.50</b>.</p>\n<p>~0.5 is good; 1.0 is exceptional. Enhanced-index strategies historically post the highest IRs.</p>"
+    },
+    {
+      "id": "measures-72",
+      "group": "measures",
+      "ref": "Define 20",
+      "type": "concept",
+      "front": "Treynor ratio (interpreting and comparing)",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<div class=\"f\">(R<sub>p</sub> − R<sub>f</sub>) ÷ β</div>\n<p>Reward per unit of <b>systematic</b> risk. Use it for a fund that is one slice of a diversified portfolio.</p>\n<p class=\"ex\"><b>Compare:</b> Fund A 11%, β 0.9 → 8.89%. Fund B 9%, β 1.1 → 5.45% (R<sub>f</sub> 3%). A wins on Treynor.</p>\n<p>If A loses on Sharpe but wins on Treynor, A carries lots of unsystematic risk: fine inside a diversified portfolio, poor as a client's only holding.</p>"
+    },
+    {
+      "id": "measures-73",
+      "group": "measures",
+      "ref": "Define 21",
+      "type": "concept",
+      "front": "Sharpe ratio (interpreting and comparing)",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<div class=\"f\">(R<sub>p</sub> − R<sub>f</sub>) ÷ σ</div>\n<p>Reward per unit of <b>total</b> risk. Use it for a client's entire portfolio or a stand-alone holding.</p>\n<p class=\"ex\"><b>Compare:</b> Fund A 11%, σ 18% → 0.44. Fund B 9%, σ 12% → 0.50. B wins on Sharpe.</p>\n<ul>\n<li>Which measure: whole portfolio → Sharpe; diversified slice → Treynor; downside focus → Sortino; active skill → information ratio; beat CAPM? → alpha.</li>\n</ul>"
+    },
+    {
+      "id": "measures-74",
+      "group": "measures",
+      "ref": "Define 22",
+      "type": "calc",
+      "front": "Alpha",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">Jensen's α = R<sub>p</sub> − [R<sub>f</sub> + β<sub>p</sub>(R<sub>m</sub> − R<sub>f</sub>)]</div>\n<p>Return above (or below) what the portfolio's beta says it should have earned under CAPM. Positive alpha = value added by the manager.</p>\n<p class=\"ex\"><b>Example:</b> R<sub>p</sub> 12%, R<sub>f</sub> 3%, β 1.2, R<sub>m</sub> 10% → required 3 + 8.4 = 11.4% → α = <b>+0.6%</b>.</p>\n<p>Simpler \"active return\" = R<sub>p</sub> − benchmark return. Alpha is only meaningful when R² is high.</p>"
+    },
+    {
+      "id": "equity-75",
+      "group": "equity",
+      "ref": "Concept 1",
+      "type": "concept",
+      "front": "Active vs passive vs semi-active (enhanced index) strategies",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p><b>Active return</b> = R<sub>p</sub> − R<sub>benchmark</sub>; <b>tracking risk</b> = σ of active return.</p>\n<ul>\n<li><b>Passive:</b> match the index. Active return ~0, tracking risk near 0, lowest fees and taxes. Rationale: markets are largely efficient; costs are certain, alpha isn't.</li>\n<li><b>Semi-active / enhanced index:</b> small controlled tilts. Active return ~0.5–2%, tracking risk ~0.5–2%. Historically the highest information ratios.</li>\n<li><b>Active:</b> aims to beat the index meaningfully. Higher active return target, tracking risk often 4%+, highest fees and turnover. Rationale: skill can exploit mispricing.</li>\n</ul>\n<p><b>Sharpe's arithmetic:</b> before costs, the average active dollar earns the market return; after costs, it must trail passive. <b>Core-satellite</b> blends a passive core with active satellites.</p>"
+    },
+    {
+      "id": "equity-76",
+      "group": "equity",
+      "ref": "Concept 2",
+      "type": "concept",
+      "front": "Dollar cost averaging (what, how, when)",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p><b>What:</b> invest a fixed dollar amount on a fixed schedule regardless of price.</p>\n<p><b>How:</b> average cost = total $ ÷ total shares; it's always ≤ the average price because more shares are bought when prices are low.</p>\n<p><b>When to use:</b> paycheck investing (401(k) contributions are natural DCA); a nervous investor with a windfall who would otherwise stay in cash; volatile markets.</p>\n<p><b>Caution:</b> with a lump sum in hand, investing it all at once has beaten DCA about two-thirds of the time historically, because markets rise more often than they fall. DCA's real value is behavioral (reduces regret).</p>"
+    },
+    {
+      "id": "equity-77",
+      "group": "equity",
+      "ref": "Concept 3a",
+      "type": "concept",
+      "front": "Separately managed accounts (SMAs)",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p>A professional manages a portfolio of <b>individual securities owned directly</b> by the investor.</p>\n<ul>\n<li><b>Pros:</b> customization (exclude stocks, ESG screens, work around legacy positions); lot-level tax-loss harvesting; no embedded gains from other investors; full transparency.</li>\n<li><b>Cons:</b> high minimums (~$100k–$250k+); fees ~0.5–1.5%+; more paperwork and statements; harder to diversify in small accounts.</li>\n<li><b>Best for:</b> large, taxable, high-bracket clients who want control.</li>\n</ul>"
+    },
+    {
+      "id": "equity-78",
+      "group": "equity",
+      "ref": "Concept 3b",
+      "type": "concept",
+      "front": "Mutual funds",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p><b>Pooled</b> investment vehicle; investors own fund shares, priced <b>once a day at NAV</b>.</p>\n<ul>\n<li><b>Pros:</b> low minimums, professional management, instant diversification, easy automatic investing.</li>\n<li><b>Cons:</b> higher expense ratios, possible loads and 12b-1 fees; <b>capital gain distributions</b> (you can be taxed on gains from others' redemptions and manager turnover); cash drag; style drift; no customization; end-of-day pricing only.</li>\n</ul>"
+    },
+    {
+      "id": "equity-79",
+      "group": "equity",
+      "ref": "Concept 3c",
+      "type": "concept",
+      "front": "Index funds",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p>Mutual funds (or ETFs) that <b>track an index</b> passively.</p>\n<ul>\n<li><b>Pros:</b> very low cost (~0.03–0.2%); low turnover → tax-efficient; broad diversification; no manager risk or style drift.</li>\n<li><b>Cons:</b> can't beat the index (earn the market minus small costs); must hold overvalued stocks in a cap-weighted index; index fund versions still trade once a day and can distribute some gains.</li>\n<li>Bernstein's and Bogle's recommended core holding.</li>\n</ul>"
+    },
+    {
+      "id": "equity-80",
+      "group": "equity",
+      "ref": "Concept 3d",
+      "type": "concept",
+      "front": "ETFs (exchange-traded funds)",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p>Pooled funds that <b>trade on an exchange</b> throughout the day like stocks.</p>\n<ul>\n<li><b>Pros:</b> very low expense ratios; <b>most tax-efficient</b> (in-kind creation/redemption avoids distributing gains); no minimums beyond one share; intraday trading, limit orders, shorting, options; transparent holdings.</li>\n<li><b>Cons:</b> bid-ask spreads and possible commissions; can trade at a premium/discount to NAV; temptation to overtrade; risky niche, leveraged, and inverse ETFs.</li>\n</ul>"
+    },
+    {
+      "id": "equity-81",
+      "group": "equity",
+      "ref": "Concept 4a",
+      "type": "concept",
+      "front": "Investment style: small, mid, large cap",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p>Rough cutoffs: small ~$300M–$2B, mid ~$2–10B, large &gt; $10B market cap.</p>\n<ul>\n<li><b>Rationale:</b> small-cap premium (Fama-French size factor); less analyst coverage → more mispricing; large caps offer stability and liquidity.</li>\n<li><b>Risks:</b> small caps are more volatile, less liquid, more likely to fail.</li>\n<li><b>Manager difficulties:</b> capacity limits as assets grow; winners \"graduate\" out of the style and must be sold; higher trading costs; index providers set different size breakpoints.</li>\n</ul>"
+    },
+    {
+      "id": "equity-82",
+      "group": "equity",
+      "ref": "Concept 4b",
+      "type": "concept",
+      "front": "Investment style: value vs growth",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p><b>Value:</b> low P/E, P/B, high dividend yield. Rationale: markets overreact; prices mean-revert; value premium. Risk: <b>value traps</b> (cheap because the business is declining).</p>\n<p><b>Growth:</b> high earnings growth, high P/E. Rationale: earnings growth drives prices. Risk: overpaying; sharp drops on earnings disappointments.</p>\n<p>Blend / GARP (growth at a reasonable price) sits between.</p>\n<p><b>Manager difficulties:</b> styles go in and out of favor for years (value lagged through the 2010s), creating pressure to drift; definitions differ by index provider; stocks migrate between styles.</p>"
+    },
+    {
+      "id": "equity-83",
+      "group": "equity",
+      "ref": "Concept 4c",
+      "type": "concept",
+      "front": "Investment style: domestic vs international",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<ul>\n<li><b>Rationale for international:</b> diversification (correlation &lt; 1); access to faster-growing economies; currency diversification; counters <b>home bias</b>.</li>\n<li><b>Risks:</b> currency risk; political and regulatory risk; less liquidity; different accounting standards; emerging-market data quality.</li>\n<li><b>Manager difficulties:</b> higher trading and custody costs; foreign withholding taxes (foreign tax credit helps in taxable accounts); correlations rise in global crises, just when diversification matters.</li>\n</ul>"
+    },
+    {
+      "id": "equity-84",
+      "group": "equity",
+      "ref": "Concept 5a",
+      "type": "concept",
+      "front": "Selecting managers: past performance",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p>Past performance is a <b>weak predictor</b> of future results; few top-quartile funds stay on top (SPIVA persistence studies).</p>\n<ul>\n<li>Use risk-adjusted measures (information ratio, Sharpe, alpha), net of fees.</li>\n<li>Compare against the <b>right benchmark</b> and peer group.</li>\n<li>Look over a full market cycle, with the same manager in charge.</li>\n<li>Watch for survivorship bias and cherry-picked periods.</li>\n<li>Pair it with qualitative due diligence: people, philosophy, process, firm stability.</li>\n</ul>"
+    },
+    {
+      "id": "equity-85",
+      "group": "equity",
+      "ref": "Concept 5b",
+      "type": "concept",
+      "front": "Selecting managers: fees",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p>Fees are the <b>most reliable predictor</b> of future relative performance: low-cost funds tend to beat high-cost peers.</p>\n<ul>\n<li>Fees are certain; alpha is not. A manager must beat the index by more than the fee just to break even.</li>\n<li>Fees compound: 1% a year on $100k over 30 years at 7% costs ~$176k vs a 0.05% fund.</li>\n<li>Check total cost: expense ratio, loads, 12b-1, advisory/wrap fees, trading costs from turnover.</li>\n<li>Very high R² + active fees = closet indexer: paying active fees for index returns.</li>\n</ul>"
+    },
+    {
+      "id": "equity-86",
+      "group": "equity",
+      "ref": "Concept 5c",
+      "type": "concept",
+      "front": "Selecting managers: style drift",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p>A manager <b>strays from the stated style</b> (a small-cap value fund buying large-cap tech growth).</p>\n<ul>\n<li><b>Why it matters:</b> distorts the client's planned allocation; creates hidden overlap with other managers; makes the benchmark and performance evaluation meaningless.</li>\n<li><b>Causes:</b> chasing performance when the style is out of favor; asset growth pushing into larger stocks.</li>\n<li><b>Detect it:</b> holdings-based analysis, returns-based style analysis, falling R² vs the stated benchmark.</li>\n</ul>"
+    },
+    {
+      "id": "equity-87",
+      "group": "equity",
+      "ref": "Concept 6",
+      "type": "concept",
+      "front": "External cash flows: effect on time-weighted vs money-weighted returns",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<ul>\n<li><b>TWR</b> is unaffected by contributions and withdrawals (periods are broken at each flow and linked).</li>\n<li><b>MWR</b> is affected: money added before strong periods pushes MWR <b>above</b> TWR; money added before weak periods (or withdrawn before strong ones) pushes it <b>below</b>.</li>\n</ul>\n<p class=\"ex\"><b>Example:</b> $1,000 falls to $800; client adds $1,000; next year +25% → $2,250. TWR = <b>0.0%</b>; MWR = <b>8.11%</b> (bought the dip).</p>\n<p>Judge a manager on TWR (they don't control flows). MWR shows the client's actual experience; the gap is the \"behavior gap.\"</p>"
+    },
+    {
+      "id": "equity-88",
+      "group": "equity",
+      "ref": "Concept 7",
+      "type": "concept",
+      "front": "Data quality issues with returns (lying with statistics)",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<ul>\n<li><b>Survivorship bias:</b> dead funds drop out, inflating averages.</li>\n<li><b>Backfill / instant-history bias:</b> funds join databases after good records.</li>\n<li><b>Incubation bias:</b> only winning test funds are launched publicly.</li>\n<li><b>Cherry-picked periods</b> (end-point sensitivity).</li>\n<li><b>Wrong benchmark</b>, or a price index vs a total-return fund.</li>\n<li>Arithmetic instead of geometric averages.</li>\n<li>Gross of fees and taxes instead of net.</li>\n<li>Annualizing short periods; cumulative shown as annual.</li>\n<li>Backtested or hypothetical results (look-ahead bias).</li>\n<li>Stale pricing of illiquid assets, which smooths volatility.</li>\n<li>Returns quoted without risk.</li>\n</ul>"
+    },
+    {
+      "id": "equity-89",
+      "group": "equity",
+      "ref": "Concept 8",
+      "type": "concept",
+      "front": "Evaluating the quality of a benchmark",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p>A valid benchmark is <b>SAMURAI</b>:</p>\n<ul>\n<li><b>S</b>pecified in advance</li>\n<li><b>A</b>ppropriate to the manager's style</li>\n<li><b>M</b>easurable</li>\n<li><b>U</b>nambiguous (known holdings and weights)</li>\n<li><b>R</b>eflective of the manager's current opinions</li>\n<li><b>A</b>ccountable (manager accepts it)</li>\n<li><b>I</b>nvestable (could be held passively)</li>\n</ul>\n<p><b>Red flags:</b> chosen after the fact; style mismatch (S&amp;P 500 for a small-cap fund); low R² between fund and benchmark; a price index used against a dividend-collecting fund.</p>"
+    },
+    {
+      "id": "equity-90",
+      "group": "equity",
+      "ref": "Concept 9",
+      "type": "concept",
+      "front": "Hurdles an active manager faces in beating an index",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<ul>\n<li><b>Costs:</b> management fees, commissions, bid-ask spreads, market impact, cash drag, taxes from turnover.</li>\n<li><b>Zero-sum game</b> before costs, negative-sum after (Sharpe's arithmetic).</li>\n<li><b>Competition and efficiency:</b> professionals trade against professionals; information spreads instantly.</li>\n<li><b>Size:</b> success attracts assets; big funds can't trade small stocks without moving prices.</li>\n<li><b>Career risk and herding:</b> managers hug the benchmark (closet indexing).</li>\n<li><b>Evidence:</b> SPIVA reports roughly 85–90% of U.S. large-cap funds trail the S&amp;P 500 over 15 years (approximate).</li>\n</ul>"
+    },
+    {
+      "id": "equity-91",
+      "group": "equity",
+      "ref": "Concept 10",
+      "type": "concept",
+      "front": "Types of trading orders",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<ul>\n<li><b>Market:</b> execute now at best available price. Certain execution, uncertain price.</li>\n<li><b>Limit:</b> buy at or below / sell at or above a set price. Certain price, may not fill.</li>\n<li><b>Stop (stop-loss):</b> becomes a market order when the stop price hits; can fill far below in a gap.</li>\n<li><b>Stop-limit:</b> becomes a limit order at the stop; may not fill.</li>\n<li><b>Trailing stop:</b> stop price follows the market up.</li>\n<li><b>Short sale:</b> borrow, sell, buy back later; profits if price falls; <b>unlimited</b> loss potential; pay dividends to lender; margin required.</li>\n<li><b>Margin purchase:</b> borrow to buy (Reg T 50% initial; ≥25% maintenance). Call price = P₀(1 − IM) ÷ (1 − MM): $50 × 0.5 ÷ 0.7 = $35.71.</li>\n<li>Time-in-force: day, GTC, fill-or-kill, immediate-or-cancel, all-or-none.</li>\n</ul>"
+    },
+    {
+      "id": "equity-92",
+      "group": "equity",
+      "ref": "Concept 11",
+      "type": "calc",
+      "front": "How fees and commissions affect returns (calculation)",
+      "prompt": "Formula, meaning, and a worked example",
+      "back_html": "<div class=\"f\">FV ≈ PV × (1 + r − fee)<sup>n</sup></div>\n<p class=\"ex\"><b>Fee drag:</b> $100k, 7% gross, 30 years → 0.05% fee ≈ $751k; 1% fee ≈ $574k. The 1% fee costs ~<b>$176k</b>.</p>\n<p class=\"ex\"><b>Front load:</b> $10,000 at 5.75% → $575 fee, $9,425 invested. Offer price = NAV ÷ (1 − load) = $20 ÷ 0.9425 = <b>$21.22</b>. Needs +6.1% to break even.</p>\n<p class=\"ex\"><b>Commissions:</b> buy 200 at $50 + $25; sell at $55 − $25 → gain $950 on $10,025 = <b>9.48%</b> vs 10% gross.</p>\n<p>Fee types: expense ratio, front/back/level loads (A/B/C shares), 12b-1, advisory (AUM ~1%), wrap, spreads, performance fees (\"2 and 20\").</p>"
+    },
+    {
+      "id": "equity-93",
+      "group": "equity",
+      "ref": "Concept 12",
+      "type": "concept",
+      "front": "Key factors that influence a stock's price",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<ul>\n<li><b>Earnings and growth</b>, especially vs expectations (surprises).</li>\n<li><b>Interest rates</b>: higher rates raise the discount rate and lower values.</li>\n<li><b>Inflation</b> and the <b>business cycle</b>.</li>\n<li><b>Dividends and buybacks</b>.</li>\n<li><b>Valuation multiples and sentiment</b>: fear, greed, momentum, biases.</li>\n<li><b>Industry, competition, management quality</b>.</li>\n<li><b>Supply/demand and liquidity</b>: fund flows, index inclusion.</li>\n<li><b>Policy and events</b>: Fed, taxes, regulation, geopolitics, currency.</li>\n</ul>\n<div class=\"f\">Gordon growth: P₀ = D₁ ÷ (r − g)</div>\n<p class=\"ex\">$2 ÷ (8% − 4%) = <b>$50</b>; if r rises to 9% → $40 (−20%).</p>"
+    },
+    {
+      "id": "readings-94",
+      "group": "readings",
+      "ref": "Reading 1",
+      "type": "concept",
+      "front": "Mike Piper, Taxes Made Simple",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<p>Plain-English guide to U.S. income tax; its sample problems are fair game on the exam.</p>\n<ul>\n<li>Flow: gross income → AGI → taxable income → tax → credits → refund or balance due.</li>\n<li>Deduction vs credit; above- vs below-the-line; standard vs itemized.</li>\n<li>Marginal vs effective rate; progressive brackets.</li>\n<li>Filing status.</li>\n<li>Short- vs long-term gains, netting, $3,000 loss limit, carryforwards.</li>\n<li>Qualified vs ordinary dividends; interest as ordinary income.</li>\n<li>FICA and self-employment tax.</li>\n<li>Traditional vs Roth: traditional if your rate now is higher than in retirement; Roth if lower.</li>\n</ul>"
+    },
+    {
+      "id": "readings-95",
+      "group": "readings",
+      "ref": "Reading 2",
+      "type": "concept",
+      "front": "Bill Bernstein (If You Can / Four Pillars / Deep Risk)",
+      "prompt": "Explain it as you would on a short-answer question",
+      "back_html": "<ul>\n<li><b>Save at least 15%</b>, starting young.</li>\n<li><b>Simple three-fund portfolio:</b> U.S. total stock, international stock, U.S. bonds, in low-cost index funds; rebalance periodically.</li>\n<li><b>Four pillars:</b> theory (risk and return are inseparable; diversify), history (bubbles and crashes recur), psychology (you are your own worst enemy), business (the industry profits from your fees and mistakes).</li>\n<li>You can't reliably time markets or pick winning managers.</li>\n<li><b>Shallow vs deep risk:</b> shallow = temporary drop; deep = permanent loss of real wealth (inflation, deflation, confiscation, devastation). Stocks are the best long-run inflation defense.</li>\n</ul>\n<p>Check which Bernstein title was assigned.</p>"
+    }
+  ]
+}

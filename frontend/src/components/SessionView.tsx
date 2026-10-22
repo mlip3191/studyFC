@@ -9,11 +9,14 @@ import {
   type StudyCard,
 } from '../lib/study'
 import { btnDanger, btnGhost, btnPrimary, panel } from '../lib/ui'
+import MoreInfoPanel from './MoreInfoPanel'
 
 export default function SessionView({
+  deckId,
   queue,
   onFinish,
 }: {
+  deckId: string
   queue: StudyCard[]
   /** Called once, with the answers so far, when the queue runs out or the user ends early. */
   onFinish: (answers: Answer[]) => void
@@ -94,6 +97,11 @@ export default function SessionView({
         <button type="button" className={`${btnPrimary} min-h-14 text-base`} onClick={gotIt}>
           Got it
         </button>
+      </div>
+
+      {/* Kept mounted (just hidden) so a loaded explanation survives un-flipping the card. */}
+      <div className={state.flipped ? '' : 'hidden'}>
+        <MoreInfoPanel key={card.id} deckId={deckId} cardId={card.id} />
       </div>
 
       <p className="hidden text-center text-sm text-slate-500 md:block">

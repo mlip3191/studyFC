@@ -9,7 +9,12 @@ export interface ShortcutHandlers {
 
 function isTypingTarget(target: EventTarget | null): boolean {
   if (!(target instanceof HTMLElement)) return false
-  return target.isContentEditable || ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName)
+  return (
+    target.isContentEditable ||
+    ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName) ||
+    // Regions that handle their own keys (e.g. the "more information" panel).
+    target.closest('[data-no-shortcuts]') !== null
+  )
 }
 
 /** Space flip, → / K got it, ← / J missed, Esc end. */
